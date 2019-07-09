@@ -2,31 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab3bd2a5-d90b-41cc-aec2-19bd718a5890" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/jk/model/Area.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/jk/model/Author.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/jk/model/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/jk/model/BookImgs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/jk/model/BookXiang.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/jk/model/CuXiao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/jk/model/DaZhe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/jk/model/DianZiBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/jk/model/DianZiContent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/jk/model/DianZiXiang.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/jk/model/GouWu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/jk/model/LunBo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/jk/model/MiaoSha.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/jk/model/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/jk/model/OrderXiang.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/jk/model/PanChong.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/jk/model/PingLun.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/jk/model/ShouCang.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/jk/model/ShouHuo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/jk/model/Type.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/jk/model/UserXinXi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/jk/model/XiLie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/jk/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/jk/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/jk/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/jk/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/controller/CkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/controller/CkController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-ck-provider/src/main/java/com/jk/controller/CkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-ck-provider/src/main/java/com/jk/controller/CkController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -55,106 +32,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/Order.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/OrderXiang.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/PanChong.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/PingLun.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/ShouCang.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/ShouHuo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/Type.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/UserXinXi.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+            <state relative-caret-position="299">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -163,13 +44,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/XiLie.java">
+        <entry file="file://$PROJECT_DIR$/book-ck-provider/src/main/java/com/jk/controller/CkController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+            <state relative-caret-position="437">
+              <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/controller/CkController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -188,41 +90,41 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/service/CkServiceFeign.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/controller/CkController.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/UserXinXi.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/book-ck-provider/src/main/resources/bootstrap.yml" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/book-ck-provider/src/main/java/com/jk/BookCkProviderApplication.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/book-ck-provider/src/main/java/com/jk/controller/CkController.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/OrderXiang.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/Order.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/Area.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/ShouHuo.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/service/CkServiceError.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/BookXiang.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/Type.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/XiLie.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/Book.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/springcloud-config/src/main/java/com/jk/SpringcloudConfigApplication.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/Author.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/GouWu.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/PingLun.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/BookImgs.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/ShouCang.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/PanChong.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/MiaoSha.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/CuXiao.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/springcloud-config/src/main/resources/application.yml" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/book-ck-consumer/src/main/resources/application.yml" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/DianZiXiang.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/BookCkConsumerApplication.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/DianZiBook.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/DaZhe.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/book-service-api/src/main/java/com/jk/service/CkService.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/service/CkServiceFeign.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/Type.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/controller/CkController.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/OrderXiang.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/UserXinXi.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/PanChong.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/CuXiao.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/book-ck-provider/src/main/java/com/jk/controller/CkController.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/GouWu.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/LunBo.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/Order.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/Author.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/XiLie.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/DianZiBook.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/DianZiContent.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/service/CkServiceError.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/Area.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/ShouHuo.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/ShouCang.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/MiaoSha.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/BookImgs.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/DianZiXiang.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/BookXiang.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/Book.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/DaZhe.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/PingLun.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/springcloud-eureka/src/main/resources/application.yml" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/springcloud-eureka/src/main/java/com/jk/SpringcloudEurekaApplication.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/book-service-api/src/main/java/com/jk/service/CkService.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -240,10 +142,8 @@
         <option value="$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/service/CkServiceFeign.java" />
         <option value="$PROJECT_DIR$/book-ck-provider/pom.xml" />
         <option value="$PROJECT_DIR$/book-ck-consumer/pom.xml" />
-        <option value="$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/controller/CkController.java" />
         <option value="$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/service/CkServiceError.java" />
         <option value="$PROJECT_DIR$/book-service-api/src/main/java/com/jk/service/CkService.java" />
-        <option value="$PROJECT_DIR$/book-ck-provider/src/main/java/com/jk/controller/CkController.java" />
         <option value="$PROJECT_DIR$/common/src/main/java/com/jk/model/Area.java" />
         <option value="$PROJECT_DIR$/common/src/main/java/com/jk/model/Author.java" />
         <option value="$PROJECT_DIR$/common/src/main/java/com/jk/model/Book.java" />
@@ -267,6 +167,8 @@
         <option value="$PROJECT_DIR$/common/src/main/java/com/jk/model/User.java" />
         <option value="$PROJECT_DIR$/common/src/main/java/com/jk/model/UserXinXi.java" />
         <option value="$PROJECT_DIR$/common/src/main/java/com/jk/model/XiLie.java" />
+        <option value="$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/controller/CkController.java" />
+        <option value="$PROJECT_DIR$/book-ck-provider/src/main/java/com/jk/controller/CkController.java" />
       </list>
     </option>
   </component>
@@ -311,6 +213,102 @@
             <path>
               <item name="sanzu-book" type="b2602c69:ProjectViewProjectNode" />
               <item name="sanzu-book" type="462c0819:PsiDirectoryNode" />
+              <item name="book-ck-consumer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sanzu-book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sanzu-book" type="462c0819:PsiDirectoryNode" />
+              <item name="book-ck-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name=".mvn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sanzu-book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sanzu-book" type="462c0819:PsiDirectoryNode" />
+              <item name="book-ck-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sanzu-book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sanzu-book" type="462c0819:PsiDirectoryNode" />
+              <item name="book-ck-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sanzu-book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sanzu-book" type="462c0819:PsiDirectoryNode" />
+              <item name="book-ck-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sanzu-book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sanzu-book" type="462c0819:PsiDirectoryNode" />
+              <item name="book-ck-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sanzu-book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sanzu-book" type="462c0819:PsiDirectoryNode" />
+              <item name="book-ck-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jk" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sanzu-book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sanzu-book" type="462c0819:PsiDirectoryNode" />
+              <item name="book-ck-provider" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sanzu-book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sanzu-book" type="462c0819:PsiDirectoryNode" />
+              <item name="book-ck-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sanzu-book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sanzu-book" type="462c0819:PsiDirectoryNode" />
+              <item name="book-ck-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sanzu-book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sanzu-book" type="462c0819:PsiDirectoryNode" />
+              <item name="book-ck-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sanzu-book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sanzu-book" type="462c0819:PsiDirectoryNode" />
+              <item name="book-ck-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sanzu-book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sanzu-book" type="462c0819:PsiDirectoryNode" />
+              <item name="book-ck-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jk" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sanzu-book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sanzu-book" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -333,15 +331,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sanzu-book" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sanzu-book" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -429,13 +418,22 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12113000" />
+    <option name="totallyTimeSpent" value="12619000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16684435" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16302083" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -451,7 +449,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3286334" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32838982" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Problems" order="10" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
@@ -496,13 +494,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="50" lean-forward="true" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -590,30 +581,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/book-ck-provider/src/main/java/com/jk/controller/CkController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/controller/CkController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -819,8 +790,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+        <state relative-caret-position="299">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -841,6 +812,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/controller/CkController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/book-ck-provider/src/main/java/com/jk/controller/CkController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

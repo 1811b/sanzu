@@ -15,9 +15,8 @@ public class CkController {
     @RequestMapping("aaa")
     public User text(){
         User user = new User();
-        user.setUserName("张淑恒");
-        user.setSex(1);
-        user.setAge(22);
+        user.setAccount("chenkai");
+        user.setPassword("chenkaizuishuai");
         User user1 = feign.text(user);
         return user1;
 

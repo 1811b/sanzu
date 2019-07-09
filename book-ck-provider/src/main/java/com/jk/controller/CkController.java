@@ -15,7 +15,6 @@ public class CkController implements CkService {
     @Override
     public User text(@RequestBody User user) {
         user.setUserId(111);
-        user.setBirthday(new Date());
         return user;
     }
 }
