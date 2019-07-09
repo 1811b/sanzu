@@ -1,17 +1,13 @@
 package com.jk.model;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
-import org.springframework.format.annotation.DateTimeFormat;
 
-import java.util.Date;
+import java.io.Serializable;
+
 @Data
-public class User {
-    private Integer userId;
-    private String userName;
-    private Integer age;
-    private  Integer sex;
-    @DateTimeFormat(pattern="yyyy-MM-dd")
-    @JsonFormat(pattern="yyyy-MM-dd",timezone="GMT+8")
-    private Date birthday;
+public class User implements Serializable {
+    private Integer   userId;  //     id--主键
+    private String     account;//      账号
+    private String     password;//    密码
+    private String     phone;//       电话
 }
