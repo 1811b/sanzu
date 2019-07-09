@@ -1,0 +1,23 @@
+server:
+  port: 8088
+spring:
+  application:
+    name: seckill-pro
+  rabbitmq:
+    host: localhost
+    username: admin
+    password: admin
+  redis:
+    host: 192.168.1.136
+    password: 123456
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/sanzuuseUnicode=true&characterEncoding=gbk&autoReconnect=true&failOverReadOnly=false&serverTimezone=GMT%2b8
+    data-username: root
+    data-password: 123456
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8888/eureka

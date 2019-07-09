@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/springcloud-config/pom.xml" />
         <option value="$PROJECT_DIR$/book-ck-provider/pom.xml" />
         <option value="$PROJECT_DIR$/book-ck-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/seckill-pro/pom.xml" />
       </list>
     </option>
   </component>

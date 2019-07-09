@@ -6,12 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="book-ck-consumer" />
         <module name="book-ck-provider" />
         <module name="book-service-api" />
-        <module name="springcloud-config" />
-        <module name="common" />
         <module name="book-utils" />
-        <module name="book-ck-consumer" />
+        <module name="common" />
+        <module name="seckill-pro" />
+        <module name="springcloud-config" />
         <module name="springcloud-eureka" />
       </profile>
     </annotationProcessing>
@@ -20,6 +21,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="book-ck-consumer" options="-parameters" />
       <module name="book-ck-provider" options="-parameters" />
+      <module name="seckill-pro" options="-parameters" />
       <module name="springcloud-config" options="-parameters" />
       <module name="springcloud-eureka" options="-parameters" />
     </option>
