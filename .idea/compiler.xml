@@ -6,16 +6,30 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="guo-shengchan" />
         <module name="book-service-api" />
-        <module name="springcloud-eureka" />
-        <module name="common" />
         <module name="springcloud-config" />
+        <module name="common" />
         <module name="book-utils" />
+        <module name="springcloud-eureka" />
+        <module name="guo-xiaofei" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="guoxu-fuwu" target="1.8" />
+      <module name="guoxu-shengchan" target="1.8" />
+      <module name="guoxu-xiaofei" target="1.8" />
+      <module name="gx-shengchan" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="guo-shengchan" options="-parameters" />
+      <module name="guo-xiaofei" options="-parameters" />
+      <module name="guoxu-fuwu" options="-parameters" />
+      <module name="guoxu-shengchan" options="-parameters" />
+      <module name="guoxu-xiaofei" options="-parameters" />
+      <module name="gx-shengchan" options="-parameters" />
       <module name="springcloud-config" options="-parameters" />
       <module name="springcloud-eureka" options="-parameters" />
     </option>
