@@ -160,7 +160,17 @@
     <panes>
       <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="sanzuaa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sanzuaa" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -239,12 +249,12 @@
       <updated>1562580035800</updated>
       <workItem from="1562580039862" duration="8501000" />
       <workItem from="1562684776801" duration="257000" />
-      <workItem from="1562739151038" duration="205000" />
+      <workItem from="1562739151038" duration="524000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15128000" />
+    <option name="totallyTimeSpent" value="15447000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
