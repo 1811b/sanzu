@@ -10,4 +10,16 @@
     <select id="selectUser"  resultType="com.jk.model.User">
         SELECT * FROM a_user
     </select>
+
+    <insert id="addLunBoTu"  parameterType="com.jk.model.LunBo">
+        INSERT INTO t_lunbotu VALUES (#{imgId},#{imgName},#{imgUrl},#{clickUrl},#{imgStatus})
+    </insert>
+
+    <select id="selectLunBo"  parameterType="java.lang.Integer"  resultType="com.jk.model.LunBo">
+        SELECT * FROM t_lunbotu LIMIT #{start},#{pageSize}
+    </select>
+
+    <select id="selectLunBoCount"  resultType="java.lang.Integer">
+        SELECT COUNT(*) FROM t_lunbotu
+    </select>
 </mapper>

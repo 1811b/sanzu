@@ -1,5 +1,6 @@
 package com.jk.controller;
 
+import com.jk.model.LunBo;
 import com.jk.model.User;
 import com.jk.service.CkServiceFeign;
 import com.jk.util.OSSClientUtil;
@@ -36,7 +37,7 @@ public class CkController {
      * OSS阿里云上传图片
      */
     @PostMapping("updaloadImg")
-    public String uploadImg(MultipartFile imgg)throws IOException {
+    public String uploadImg(MultipartFile imgg) throws IOException {
         if (imgg == null || imgg.getSize() <= 0) {
             throw new IOException("file不能为空");
         }
@@ -46,5 +47,19 @@ public class CkController {
         String[] split = imgUrl.split("\\?");
         //System.out.println(split[0]);
         return split[0];
+    }
+
+    @PostMapping("addLunBoTu")
+    public void addLunBoTu(LunBo lunBo){
+        feign.addLunBoTu(lunBo);
+
+    }
+
+
+    @GetMapping("selectLunBo")
+    public HashMap<String,Object>  selectLunBo(@RequestParam(value = "start") Integer start,
+                                               @RequestParam(value = "pageSize") Integer pageSize){
+        return feign.selectLunBo(start,pageSize);
+
     }
 }

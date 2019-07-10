@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<form id="mongoForm">
+
+    <input type="hidden"  name="userId"  th:value="${user.userId}">
+    <div>
+        姓名: <input type="text" name="userName"  th:value="${user.userName}"  placeholder="姓名">
+    </div>
+    年龄: <input type="number" name="age"  th:value="${user.age}"  placeholder="年龄">
+    <div>
+        性别: <input type="radio" name="sex"  value="1"  th:checked="${user.sex==1}">男
+             <input type="radio" name="sex"  value="2"  th:checked="${user.sex==2}">女
+    </div>
+
+    <div>
+        出生日期:<input class='Wdate' name="birthday" type="text" style="width:160px"
+                    onclick="WdatePicker({dateFmt:'yyyy-MM-dd'})"
+                    th:value="${#dates.format(user.birthday,'yyyy-MM-dd')}" />
+    </div>
+
+
+</form>
+
+
+<script  type="text/javascript">
+
+</script>
+
+

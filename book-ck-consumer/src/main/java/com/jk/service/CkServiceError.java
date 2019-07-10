@@ -1,9 +1,9 @@
 package com.jk.service;
 
+import com.jk.model.LunBo;
 import com.jk.model.User;
 import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
 
@@ -18,6 +18,19 @@ public class CkServiceError implements CkService{
     @GetMapping("selectUser")
     @Override
     public HashMap<String, Object> selectUser() {
+        return null;
+    }
+
+    @Override
+    @PostMapping("addLunBoTu")
+    public void addLunBoTu(@RequestBody LunBo lunBo) {
+
+    }
+
+    @Override
+    @GetMapping("selectLunBo")
+    public HashMap<String, Object> selectLunBo(@PathVariable(value = "start") Integer start,
+                                               @PathVariable(value = "pageSize") Integer pageSize) {
         return null;
     }
 }
