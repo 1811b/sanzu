@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <list default="true" id="ab3bd2a5-d90b-41cc-aec2-19bd718a5890" name="Default Changelist" comment="" />
 =======
     <list default="true" id="ab3bd2a5-d90b-41cc-aec2-19bd718a5890" name="Default Changelist" comment="">
@@ -24,6 +25,11 @@
       <change beforePath="$PROJECT_DIR$/common/target/classes/com/jk/model/PingLun.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/jk/model/PingLun.class" afterDir="false" />
     </list>
 >>>>>>> chenkai
+=======
+    <list default="true" id="ab3bd2a5-d90b-41cc-aec2-19bd718a5890" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+>>>>>>> 79e34558f4282232b68d74e8e2df2498420256ec
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/springcloud-eureka/target/" />
@@ -52,6 +58,7 @@
     <favorites_list name="sanzu-book" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
 <<<<<<< HEAD
       <file pinned="false" current-in-tab="true">
@@ -155,6 +162,9 @@
       </file>
 >>>>>>> chenkai
     </leaf>
+=======
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+>>>>>>> 79e34558f4282232b68d74e8e2df2498420256ec
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -169,35 +179,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/service/CkServiceFeign.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/controller/CkController.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/book-ck-provider/src/main/resources/bootstrap.yml" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/book-ck-provider/src/main/java/com/jk/BookCkProviderApplication.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/book-ck-provider/src/main/java/com/jk/controller/CkController.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/service/CkServiceError.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/DianZiXiang.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/BookImgs.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/MiaoSha.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/ShouCang.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/ShouHuo.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/PingLun.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/springcloud-config/src/main/java/com/jk/SpringcloudConfigApplication.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/XiLie.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/Author.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/Order.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/LunBo.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/GouWu.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/DaZhe.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/Book.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/BookXiang.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/CuXiao.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/PanChong.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/UserXinXi.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/Type.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/Area.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/DianZiContent.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/springcloud-config/src/main/resources/application.yml" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/DianZiBook.java" root0="SKIP_INSPECTION" />
+<<<<<<< HEAD
     <setting file="file://$PROJECT_DIR$/book-ck-consumer/src/main/resources/application.yml" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/User.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/BookCkConsumerApplication.java" root0="SKIP_INSPECTION" />
@@ -207,9 +191,41 @@
     <setting file="file://$PROJECT_DIR$/book-ck-provider/src/main/java/com/jk/mapper/CkMapper.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/book-utils/src/main/java/com/jk/util/OSSClientUtil.java" root0="SKIP_INSPECTION" />
 >>>>>>> chenkai
+=======
+    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/DianZiContent.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/Area.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/Type.java" root0="SKIP_INSPECTION" />
+>>>>>>> 79e34558f4282232b68d74e8e2df2498420256ec
     <setting file="file://$PROJECT_DIR$/springcloud-eureka/src/main/resources/application.yml" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/PanChong.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/UserXinXi.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/XiLie.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/BookImgs.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/DianZiXiang.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/springcloud-config/src/main/java/com/jk/SpringcloudConfigApplication.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/BookXiang.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/Book.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/DaZhe.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/springcloud-eureka/src/main/java/com/jk/SpringcloudEurekaApplication.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/GouWu.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/LunBo.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/Order.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/PingLun.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/ShouHuo.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/ShouCang.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/MiaoSha.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/book-ck-provider/src/main/java/com/jk/controller/CkController.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/book-service-api/src/main/java/com/jk/service/CkService.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/book-ck-consumer/src/main/resources/application.yml" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/controller/CkController.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/service/CkServiceFeign.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/service/CkServiceError.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/BookCkConsumerApplication.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/User.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/CuXiao.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/springcloud-config/src/main/resources/application.yml" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/book-ck-provider/src/main/resources/bootstrap.yml" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/book-ck-provider/src/main/java/com/jk/BookCkProviderApplication.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -270,8 +286,8 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="D:/Maven/apache-maven-3.0.4.2" />
-        <option name="userSettingsFile" value="D:\Maven\apache-maven-3.0.4.2\conf\settings.xml" />
+        <option name="mavenHome" value="E:/apache-maven-3.0.4.2" />
+        <option name="userSettingsFile" value="E:\apache-maven-3.0.4.2\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -297,11 +313,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
+<<<<<<< HEAD
               <item name="sanzu-book" type="b2602c69:ProjectViewProjectNode" />
               <item name="sanzu-book" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -444,12 +462,15 @@
               <item name="sanzu-book" type="b2602c69:ProjectViewProjectNode" />
               <item name="sanzu-book" type="462c0819:PsiDirectoryNode" />
               <item name="book-utils" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="sanzuaa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sanzuaa" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 79e34558f4282232b68d74e8e2df2498420256ec
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -471,7 +492,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -543,20 +564,28 @@
 <<<<<<< HEAD
       <workItem from="1562580039862" duration="8501000" />
       <workItem from="1562684776801" duration="257000" />
+<<<<<<< HEAD
 =======
       <workItem from="1562580039862" duration="8895000" />
       <workItem from="1562634440226" duration="4712000" />
       <workItem from="1562728071175" duration="679000" />
 >>>>>>> chenkai
+=======
+      <workItem from="1562739151038" duration="524000" />
+>>>>>>> 79e34558f4282232b68d74e8e2df2498420256ec
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="15401000" />
 =======
     <option name="totallyTimeSpent" value="23131000" />
 >>>>>>> chenkai
+=======
+    <option name="totallyTimeSpent" value="15447000" />
+>>>>>>> 79e34558f4282232b68d74e8e2df2498420256ec
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -568,11 +597,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
 <<<<<<< HEAD
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18017058" />
+=======
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18230563" />
+>>>>>>> 79e34558f4282232b68d74e8e2df2498420256ec
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
 =======
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49676377" visible="true" weight="0.18017058" />
@@ -593,8 +628,13 @@
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.82302773" weight="0.24702059" />
       <window_info anchor="bottom" id="Spring" order="7" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.880597" visible="true" weight="0.3275488" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+=======
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.880597" visible="true" weight="0.32697946" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32991204" />
+>>>>>>> 79e34558f4282232b68d74e8e2df2498420256ec
       <window_info anchor="bottom" id="Problems" order="10" />
 =======
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32838982" />
@@ -606,7 +646,11 @@
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="15" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Run Dashboard" order="16" weight="0.329718" />
+=======
+      <window_info anchor="bottom" id="Run Dashboard" order="16" visible="true" weight="0.329718" />
+>>>>>>> 79e34558f4282232b68d74e8e2df2498420256ec
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -899,6 +943,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/BookXiang.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
@@ -911,6 +956,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/CuXiao.java">
 >>>>>>> chenkai
+=======
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/OrderXiang.java" />
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/PanChong.java">
+>>>>>>> 79e34558f4282232b68d74e8e2df2498420256ec
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="10" column="45" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="10" selection-end-column="45" />
@@ -1066,6 +1115,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/book-utils/src/main/java/com/jk/util/PageUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1370">
@@ -1076,6 +1126,15 @@
         <state relative-caret-position="322">
           <caret line="59" column="20" lean-forward="true" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
 >>>>>>> chenkai
+=======
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+>>>>>>> 79e34558f4282232b68d74e8e2df2498420256ec
         </state>
       </provider>
     </entry>
