@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ab3bd2a5-d90b-41cc-aec2-19bd718a5890" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/jk/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/jk/model/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/jk/model/OrderXiang.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/jk/model/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/jk/model/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/jk/model/OrderXiang.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,24 +32,12 @@
     <favorites_list name="sanzu-book" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/Order.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/GouWu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="17" selection-end-column="54" />
+            <state relative-caret-position="427">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,9 +78,11 @@
     <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/Order.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/LunBo.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/GouWu.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/book-ck-provider/src/main/java/com/jk/mapper/CkMapper.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/DaZhe.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/Book.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/BookXiang.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/book-ck-provider/src/main/java/com/jk/mapper/CkMapper.xml" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/CuXiao.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/PanChong.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/UserXinXi.java" root0="SKIP_INSPECTION" />
@@ -108,8 +94,6 @@
     <setting file="file://$PROJECT_DIR$/book-ck-consumer/src/main/resources/application.yml" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/User.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/BookCkConsumerApplication.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/book-ck-provider/src/main/java/com/jk/mapper/CkMapper.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/book-ck-provider/src/main/java/com/jk/mapper/CkMapper.xml" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/springcloud-eureka/src/main/resources/application.yml" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/springcloud-eureka/src/main/java/com/jk/SpringcloudEurekaApplication.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/book-service-api/src/main/java/com/jk/service/CkService.java" root0="SKIP_INSPECTION" />
@@ -194,6 +178,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -201,37 +186,10 @@
               <item name="sanzu-book" type="b2602c69:ProjectViewProjectNode" />
               <item name="sanzu-book" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="sanzu-book" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sanzu-book" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sanzu-book" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sanzu-book" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sanzu-book" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sanzu-book" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sanzu-book" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sanzu-book" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -273,8 +231,9 @@
         </RuleState>
       </list>
     </option>
+    <option name="contentProportion" value="0.18831168" />
   </component>
-  <component name="RunManager" selected="Spring Boot.BookCkConsumerApplication">
+  <component name="RunManager" selected="Spring Boot.SpringcloudConfigApplication">
     <configuration name="BookCkConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="book-ck-consumer" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.jk.BookCkConsumerApplication" />
@@ -316,11 +275,12 @@
       <updated>1562580035800</updated>
       <workItem from="1562580039862" duration="8895000" />
       <workItem from="1562634440226" duration="4712000" />
+      <workItem from="1562728071175" duration="679000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17212000" />
+    <option name="totallyTimeSpent" value="18117000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -335,22 +295,21 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13859275" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49676377" visible="true" weight="0.18017058" />
+      <window_info id="Structure" order="1" sideWeight="0.5010846" side_tool="true" weight="0.17857143" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info id="Favorites" order="4" sideWeight="0.5010846" side_tool="true" weight="0.17857143" />
       <window_info id="Capture Tool" order="5" />
-      <window_info id="Web" order="6" side_tool="true" />
+      <window_info id="Web" order="6" sideWeight="0.50323623" side_tool="true" weight="0.18017058" />
       <window_info id="Image Layers" order="7" />
-      <window_info anchor="bottom" id="Run Dashboard" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3209746" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.82302773" visible="true" weight="0.24728851" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.82302773" weight="0.24702059" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32838982" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.17697228" side_tool="true" weight="0.24728851" />
@@ -360,6 +319,7 @@
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="15" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" order="16" visible="true" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -604,13 +564,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/OrderXiang.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/OrderXiang.java" />
     <entry file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/PanChong.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -700,8 +654,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1380">
-          <caret line="60" column="20" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
+        <state relative-caret-position="391">
+          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -748,8 +702,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/Order.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="427">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
