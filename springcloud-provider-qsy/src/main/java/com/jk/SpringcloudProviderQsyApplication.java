@@ -1,17 +1,17 @@
 package com.jk;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
-import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
+@MapperScan("com.jk.dao")
 @EnableEurekaClient
-@EnableFeignClients
-public class BookCkConsumerApplication {
+public class SpringcloudProviderQsyApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(BookCkConsumerApplication.class, args);
+        SpringApplication.run(SpringcloudProviderQsyApplication.class, args);
     }
 
 }
