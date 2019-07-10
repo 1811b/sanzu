@@ -19,4 +19,7 @@ public class PingLun implements Serializable {
     private Date createTime;//  --评论时间
     private Integer   count;//  --点赞数量
     private Integer    xingJi;//  --评论星级
+
+    //临时字段
+    private String      nickName;//用户昵称
 }

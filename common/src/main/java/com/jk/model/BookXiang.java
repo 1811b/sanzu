@@ -24,4 +24,7 @@ public class BookXiang implements Serializable {
     @DateTimeFormat(pattern="yyyy-MM-dd")
     @JsonFormat(pattern="yyyy-MM-dd",timezone="GMT+8")
     private Date createTime;//  --创建时间
+
+    //临时字段
+    private String    authorName;//作者名字
 }
