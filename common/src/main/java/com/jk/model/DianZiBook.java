@@ -24,4 +24,7 @@ public class DianZiBook implements Serializable {
     @JsonFormat(pattern="yyyy-MM-dd",timezone="GMT+8")
     private Date createTime;//  --出版时间
     private Integer    shangStatus;//  --是否上架1、是2、否
+
+    //类型名称
+    private String     typeName;//类型名称
 }
