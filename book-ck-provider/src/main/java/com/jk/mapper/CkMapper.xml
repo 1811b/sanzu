@@ -43,4 +43,8 @@
     <select id="selectTree"  resultType="com.jk.model.TreeBean">
         SELECT * FROM t_tree
     </select>
+
+    <select id="selectLunZhan"  resultType="com.jk.model.LunBo">
+        SELECT * FROM t_lunbotu
+    </select>
 </mapper>

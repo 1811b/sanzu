@@ -28,4 +28,6 @@ public interface CkMapper {
     void updateStatus(Integer id, Integer zt);
 
     List<TreeBean> selectTree();
+
+    List<LunBo> selectLunZhan();
 }

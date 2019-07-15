@@ -2,22 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab3bd2a5-d90b-41cc-aec2-19bd718a5890" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/jk/model/TreeBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/controller/CkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/controller/CkController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/controller/PageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/controller/PageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/service/CkServiceError.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/service/CkServiceError.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-ck-consumer/src/main/resources/templates/addDialog.html" beforeDir="false" afterPath="$PROJECT_DIR$/book-ck-consumer/src/main/resources/templates/addDialog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-ck-consumer/src/main/resources/templates/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/book-ck-consumer/src/main/resources/templates/show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-ck-consumer/src/main/resources/templates/lunBoTu.html" beforeDir="false" afterPath="$PROJECT_DIR$/book-ck-consumer/src/main/resources/templates/lunBoTu.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-ck-consumer/src/main/resources/templates/updateDialog.html" beforeDir="false" afterPath="$PROJECT_DIR$/book-ck-consumer/src/main/resources/templates/updateDialog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-ck-provider/src/main/java/com/jk/controller/CkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-ck-provider/src/main/java/com/jk/controller/CkController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-ck-provider/src/main/java/com/jk/mapper/CkMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-ck-provider/src/main/java/com/jk/mapper/CkMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-ck-provider/src/main/java/com/jk/mapper/CkMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/book-ck-provider/src/main/java/com/jk/mapper/CkMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-service-api/src/main/java/com/jk/service/CkService.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service-api/src/main/java/com/jk/service/CkService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-service-api/target/classes/com/jk/service/CkService.class" beforeDir="false" afterPath="$PROJECT_DIR$/book-service-api/target/classes/com/jk/service/CkService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-utils/src/main/java/com/jk/util/OSSClientUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-utils/src/main/java/com/jk/util/OSSClientUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-utils/target/classes/com/jk/util/OSSClientUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/book-utils/target/classes/com/jk/util/OSSClientUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-config/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-config/src/main/resources/application.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -48,21 +42,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/controller/CkController.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/book-service-api/src/main/java/com/jk/service/CkService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-92">
-              <caret line="41" column="31" lean-forward="true" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
+            <state relative-caret-position="432">
+              <caret line="39" column="30" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
               <folding>
-                <element signature="e#784#785#0" expanded="true" />
-                <element signature="e#825#826#0" expanded="true" />
-                <element signature="e#1946#1947#0" expanded="true" />
-                <element signature="e#1980#1981#0" expanded="true" />
-                <element signature="e#2086#2087#0" expanded="true" />
-                <element signature="e#2117#2118#0" expanded="true" />
-                <element signature="e#2469#2470#0" expanded="true" />
-                <element signature="e#2509#2510#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/book-ck-consumer/src/main/resources/templates/lunBoTu.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="70" column="19" selection-start-line="70" selection-start-column="19" selection-end-line="70" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/book-ck-consumer/src/main/resources/templates/show.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-4784">
+              <caret line="5" column="73" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="73" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/book-ck-consumer/src/main/resources/templates/updateDialog.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="892">
+              <caret line="61" column="37" lean-forward="true" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -70,58 +84,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/controller/PageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="21" column="30" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/book-service-api/src/main/java/com/jk/service/CkService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="759">
-              <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/service/CkServiceError.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="473">
-              <caret line="64" column="27" selection-start-line="64" selection-start-column="27" selection-end-line="64" selection-end-column="27" />
-              <folding>
-                <element signature="e#1558#1559#0" expanded="true" />
-                <element signature="e#1585#1586#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/book-ck-provider/src/main/java/com/jk/controller/CkController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="84" column="34" selection-start-line="84" selection-start-column="34" selection-end-line="84" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1669#1670#0" expanded="true" />
-                <element signature="e#1712#1713#0" expanded="true" />
-                <element signature="e#2376#2377#0" expanded="true" />
-                <element signature="e#2403#2404#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/book-ck-provider/src/main/java/com/jk/mapper/CkMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="29" column="18" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="18" />
+            <state relative-caret-position="345">
+              <caret line="26" column="26" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -129,8 +93,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/book-ck-provider/src/main/java/com/jk/mapper/CkMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="42" column="64" selection-start-line="42" selection-start-column="64" selection-end-line="42" selection-end-column="64" />
+            <state relative-caret-position="566">
+              <caret line="47" column="31" lean-forward="true" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -155,14 +119,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/service/CkServiceFeign.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/controller/CkController.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/book-ck-provider/src/main/resources/bootstrap.yml" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/book-ck-consumer/src/main/resources/templates/updateDialog.html" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/book-ck-provider/src/main/java/com/jk/BookCkProviderApplication.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/TreeBean.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/book-ck-provider/src/main/java/com/jk/controller/CkController.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/service/CkServiceError.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/DianZiXiang.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/BookImgs.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/MiaoSha.java" root0="SKIP_INSPECTION" />
@@ -192,11 +150,18 @@
     <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/User.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/BookCkConsumerApplication.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/book-utils/src/main/java/com/jk/util/OSSClientUtil.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/book-ck-consumer/src/main/resources/templates/addDialog.html" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/controller/PageController.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/book-service-api/src/main/java/com/jk/service/CkService.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/service/CkServiceFeign.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/controller/CkController.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/book-ck-consumer/src/main/resources/templates/updateDialog.html" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/TreeBean.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/book-ck-provider/src/main/java/com/jk/controller/CkController.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/service/CkServiceError.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/book-ck-consumer/src/main/resources/templates/lunBoTu.html" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/book-ck-consumer/src/main/resources/templates/addDialog.html" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/springcloud-eureka/src/main/resources/application.yml" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/springcloud-eureka/src/main/java/com/jk/SpringcloudEurekaApplication.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/book-service-api/src/main/java/com/jk/service/CkService.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -239,11 +204,10 @@
         <option value="$PROJECT_DIR$/book-ck-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/service/CkServiceFeign.java" />
         <option value="$PROJECT_DIR$/book-utils/src/main/java/com/jk/util/OSSClientUtil.java" />
-        <option value="$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/controller/PageController.java" />
         <option value="$PROJECT_DIR$/springcloud-config/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/book-ck-consumer/src/main/resources/templates/addDialog.html" />
-        <option value="$PROJECT_DIR$/book-ck-consumer/src/main/resources/templates/updateDialog.html" />
         <option value="$PROJECT_DIR$/book-ck-consumer/src/main/resources/templates/show.html" />
+        <option value="$PROJECT_DIR$/book-ck-consumer/src/main/resources/templates/updateDialog.html" />
         <option value="$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/controller/CkController.java" />
         <option value="$PROJECT_DIR$/book-service-api/src/main/java/com/jk/service/CkService.java" />
         <option value="$PROJECT_DIR$/book-service-api/src/main/java/com/jk/service/CkService.java" />
@@ -251,6 +215,8 @@
         <option value="$PROJECT_DIR$/book-ck-provider/src/main/java/com/jk/controller/CkController.java" />
         <option value="$PROJECT_DIR$/book-ck-provider/src/main/java/com/jk/mapper/CkMapper.java" />
         <option value="$PROJECT_DIR$/book-ck-provider/src/main/java/com/jk/mapper/CkMapper.xml" />
+        <option value="$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/controller/PageController.java" />
+        <option value="$PROJECT_DIR$/book-ck-consumer/src/main/resources/templates/lunBoTu.html" />
       </list>
     </option>
   </component>
@@ -356,6 +322,151 @@
             <path>
               <item name="sanzu-book" type="b2602c69:ProjectViewProjectNode" />
               <item name="sanzu-book" type="462c0819:PsiDirectoryNode" />
+              <item name="book-ck-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sanzu-book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sanzu-book" type="462c0819:PsiDirectoryNode" />
+              <item name="book-ck-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sanzu-book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sanzu-book" type="462c0819:PsiDirectoryNode" />
+              <item name="book-ck-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="swiper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sanzu-book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sanzu-book" type="462c0819:PsiDirectoryNode" />
+              <item name="book-ck-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="swiper" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sanzu-book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sanzu-book" type="462c0819:PsiDirectoryNode" />
+              <item name="book-ck-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="swiper" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="swiper.css" type="620a8d5e:NestingTreeNode" />
+            </path>
+            <path>
+              <item name="sanzu-book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sanzu-book" type="462c0819:PsiDirectoryNode" />
+              <item name="book-ck-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="swiper" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sanzu-book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sanzu-book" type="462c0819:PsiDirectoryNode" />
+              <item name="book-ck-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="swiper" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="swiper.js" type="620a8d5e:NestingTreeNode" />
+            </path>
+            <path>
+              <item name="sanzu-book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sanzu-book" type="462c0819:PsiDirectoryNode" />
+              <item name="book-ck-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sanzu-book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sanzu-book" type="462c0819:PsiDirectoryNode" />
+              <item name="book-ck-provider" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sanzu-book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sanzu-book" type="462c0819:PsiDirectoryNode" />
+              <item name="book-ck-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sanzu-book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sanzu-book" type="462c0819:PsiDirectoryNode" />
+              <item name="book-ck-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sanzu-book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sanzu-book" type="462c0819:PsiDirectoryNode" />
+              <item name="book-ck-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sanzu-book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sanzu-book" type="462c0819:PsiDirectoryNode" />
+              <item name="book-ck-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sanzu-book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sanzu-book" type="462c0819:PsiDirectoryNode" />
+              <item name="book-ck-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jk" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sanzu-book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sanzu-book" type="462c0819:PsiDirectoryNode" />
+              <item name="book-ck-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jk" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sanzu-book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sanzu-book" type="462c0819:PsiDirectoryNode" />
+              <item name="book-ck-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sanzu-book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sanzu-book" type="462c0819:PsiDirectoryNode" />
               <item name="book-service-api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -406,7 +517,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/common/src/main/java/com/jk/model" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
@@ -484,7 +595,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41620000" />
+    <option name="totallyTimeSpent" value="46199000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -499,7 +610,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49676377" visible="true" weight="0.2217484" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49676377" visible="true" weight="0.2217484" />
       <window_info id="Structure" order="1" sideWeight="0.5010846" side_tool="true" weight="0.17857143" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -523,7 +634,7 @@
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="15" />
-      <window_info anchor="bottom" id="Run Dashboard" order="16" visible="true" weight="0.27440348" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" order="16" visible="true" weight="0.27440348" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -544,13 +655,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
           <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/book-ck-consumer/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
@@ -829,13 +933,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/book-ck-consumer/src/main/resources/templates/lunBoTu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/book-ck-consumer/src/main/resources/templates/book/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -866,13 +963,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/book-ck-provider/src/main/resources/bootstrap.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/springcloud-config/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -887,52 +977,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/book-ck-consumer/src/main/resources/templates/show.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="301" column="7" lean-forward="true" selection-start-line="301" selection-start-column="7" selection-end-line="301" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/book-ck-consumer/src/main/resources/templates/updateDialog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="40" lean-forward="true" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/service/CkServiceError.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="64" column="27" selection-start-line="64" selection-start-column="27" selection-end-line="64" selection-end-column="27" />
-          <folding>
-            <element signature="e#1558#1559#0" expanded="true" />
-            <element signature="e#1585#1586#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/book-ck-provider/src/main/java/com/jk/controller/CkController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="84" column="34" selection-start-line="84" selection-start-column="34" selection-end-line="84" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1669#1670#0" expanded="true" />
-            <element signature="e#1712#1713#0" expanded="true" />
-            <element signature="e#2376#2377#0" expanded="true" />
-            <element signature="e#2403#2404#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/book-ck-provider/src/main/java/com/jk/mapper/CkMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="29" column="18" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/src/main/java/com/jk/model/TreeBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -943,34 +987,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/book-ck-provider/src/main/java/com/jk/mapper/CkMapper.xml">
+    <entry file="file://$PROJECT_DIR$/book-ck-consumer/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="42" column="64" selection-start-line="42" selection-start-column="64" selection-end-line="42" selection-end-column="64" />
+        <state relative-caret-position="253">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/book-service-api/src/main/java/com/jk/service/CkService.java">
+    <entry file="file://$PROJECT_DIR$/book-ck-provider/src/main/resources/bootstrap.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/controller/PageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="21" column="30" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="30" />
+        <state relative-caret-position="368">
+          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/controller/CkController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-92">
-          <caret line="41" column="31" lean-forward="true" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
+        <state relative-caret-position="501">
+          <caret line="111" column="34" lean-forward="true" selection-start-line="111" selection-start-column="34" selection-end-line="111" selection-end-column="34" />
           <folding>
             <element signature="e#784#785#0" expanded="true" />
             <element signature="e#825#826#0" expanded="true" />
@@ -980,13 +1014,113 @@
             <element signature="e#2117#2118#0" expanded="true" />
             <element signature="e#2469#2470#0" expanded="true" />
             <element signature="e#2509#2510#0" expanded="true" />
+            <element signature="e#2584#2585#0" expanded="true" />
+            <element signature="e#2625#2626#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/service/CkServiceError.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="73" column="5" lean-forward="true" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
+          <folding>
+            <element signature="e#1671#1672#0" expanded="true" />
+            <element signature="e#1698#1699#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/book-service-api/src/main/java/com/jk/service/CkService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="39" column="30" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/book-ck-provider/src/main/java/com/jk/controller/CkController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="90" column="37" lean-forward="true" selection-start-line="90" selection-start-column="37" selection-end-line="90" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2506#2507#0" expanded="true" />
+            <element signature="e#2533#2534#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/book-ck-provider/src/main/java/com/jk/mapper/CkMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="31" column="15" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/book-ck-provider/src/main/java/com/jk/mapper/CkMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="566">
+          <caret line="47" column="31" lean-forward="true" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/book-ck-consumer/src/main/java/com/jk/controller/PageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/book-ck-consumer/src/main/resources/templates/updateDialog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="892">
+          <caret line="61" column="37" lean-forward="true" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/book-ck-consumer/src/main/resources/templates/show.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4784">
+          <caret line="5" column="73" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/book-ck-consumer/src/main/resources/templates/lunBoTu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="70" column="19" selection-start-line="70" selection-start-column="19" selection-end-line="70" selection-end-column="19" />
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
           <splitter-proportions>
@@ -999,6 +1133,17 @@
         </settings>
       </state>
       <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
         <settings>
           <splitter-proportions>
             <option name="proportions">

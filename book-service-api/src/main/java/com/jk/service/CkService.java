@@ -36,4 +36,7 @@ public interface CkService {
 
     @GetMapping("selectTree")
     List<TreeBean> selectTree();
+
+    @GetMapping("selectLunZhan")
+    List<LunBo> selectLunZhan();
 }

@@ -2,7 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <form id="mongoForm">
     <input  type="hidden"  name="imgId"  th:value="${lun.imgId}">
-    <!--<input  type="hidden"  th:value="${lun.imgUrl}"  id="aaa">-->
+
     <div>
         图片名称: <input type="text" name="imgName" th:value="${lun.imgName}"   placeholder="图片名称">
     </div>
@@ -18,19 +18,19 @@
 
     <div class="form-group">
         <label for="headImg">轮播图</label>
-        <input type="hidden" id="testimg" name="imgUrl"   th:value="${lun.imgUrl}"/>
+        <input type="hidden" id="testimg" name="imgUrl"/>
         <input type="file"   class="projectfile"  name="imgg" id="headImg">
         <img id="iii"  width="80px"  height="60px">
     </div>
 
 
 </form>
-
+    <input type="hidden" name="imgUrl" id="imgUrl" th:value="${lun.imgUrl}">
 
 <script  type="text/javascript">
      $(function () {
         uploadImg();
-         var s = $("#testimg").val();
+         var s = $("#imgUrl").val();
             $("#iii").attr('src', s);
     });
     function uploadImg(url){

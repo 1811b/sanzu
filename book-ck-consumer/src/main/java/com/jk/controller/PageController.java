@@ -24,6 +24,11 @@ public class PageController {
         return "show";
     }
 
+    @RequestMapping("toLun")
+    public String toLun(){
+        return "lunBoTu";
+    }
+
 
     @RequestMapping("selectLunById")
     public String selectLunById(@RequestParam(value = "id")Integer id, Model model){

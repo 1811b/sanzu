@@ -107,4 +107,9 @@ public class CkController {
        return feign.selectTree();
     }
 
+    @GetMapping("selectLunZhan")
+    public List<LunBo>  selectLunZhan(){
+        return feign.selectLunZhan();
+    }
+
 }

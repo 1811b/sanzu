@@ -84,4 +84,10 @@ public class CkController implements CkService {
     public List<TreeBean> selectTree() {
         return ckMapper.selectTree();
     }
+
+    @Override
+    @GetMapping("selectLunZhan")
+    public List<LunBo> selectLunZhan() {
+        return ckMapper.selectLunZhan();
+    }
 }

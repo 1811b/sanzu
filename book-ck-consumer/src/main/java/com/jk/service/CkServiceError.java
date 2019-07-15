@@ -66,4 +66,10 @@ public class CkServiceError implements CkService{
     public List<TreeBean> selectTree() {
         return null;
     }
+
+    @Override
+    @GetMapping("selectLunZhan")
+    public List<LunBo> selectLunZhan() {
+        return null;
+    }
 }
