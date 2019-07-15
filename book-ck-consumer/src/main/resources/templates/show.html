@@ -17,6 +17,12 @@
     <script type="text/javascript" src="../js/bootbox/bootbox.js"></script>
     <!-- 引入my97 -->
     <script type="text/javascript" src="../js/my97/WdatePicker.js"></script>
+    <!-- 引入fileinput的css -->
+    <link type="text/css" rel="stylesheet" href="../js/fileinput/css/fileinput.min.css" />
+    <!-- 引入fileinput的js -->
+    <script type="text/javascript" src="../js/fileinput/js/fileinput.min.js"></script>
+    <!--  引入fileinput的js -->
+    <script type="text/javascript" src="../js/fileinput/js/locales/zh.js"></script>
 
 </head>
 <body>
@@ -69,8 +75,16 @@
                 },
                 {field:'caozuo',title:'操作',width:100,
                     formatter: function (value,row,index){
-                        return '<input type="button" value="编辑" onclick="updateDoctor('+row.imgId+')">    ' +
-                            '  <input type="button" value="删除" onclick="deleteDoctor('+row.imgId+')">';
+                        if(row.imgStatus==1){
+                            return '<input type="button" value="编辑" onclick="updateDoctor('+row.imgId+')">    ' +
+                                '<input type="button" value="不展示" onclick="updateStatus('+row.imgId+',2)">    ' +
+                                '  <input type="button" value="删除" onclick="deleteDoctor('+row.imgId+')">';
+                        }else if (row.imgStatus==2) {
+                            return '<input type="button" value="编辑" onclick="updateDoctor('+row.imgId+')">    ' +
+                                '<input type="button" value="展示" onclick="updateStatus('+row.imgId+',1)">    ' +
+                                '  <input type="button" value="删除" onclick="deleteDoctor('+row.imgId+')">';
+                        }
+
                     },
                 },
             ],
@@ -190,10 +204,13 @@
             /*var arr = $("#bootTab").bootstrapTable("getSelections");//获取复选框对象  butdeleteId
             var mid=arr[0].mid;
             alert(mid);*/
-            alert(id);
-                dialog2("selectUserById?id="+id,"updateUser","修改");
+            //alert(id);
+                dialog2("selectLunById?id="+id,"updateLunBo","修改轮播图");
                 //alert("请选择要修改的数据");
     }
+
+
+
     function  dialog2(HTMLurl,submitUrl,title){
         var dialog = bootbox.dialog({
             title: title,
@@ -249,10 +266,10 @@
         }
         ids = ids.substring(0, ids.length - 1);
         alert(ids);*/
-       alert(id);
+       //alert(id);
         $.ajax({
             type:"delete",
-            url:"deleteUser",
+            url:"deleteLun",
             data:{id:id},
             success:function (data){
                 $("#bootTab").bootstrapTable("refresh");
@@ -260,6 +277,20 @@
         });
 
     }
+
+    updateStatus=function (id,zt) {
+        //alert(id);
+        //alert(zt);
+        $.ajax({
+            type:"put",
+            url:"updateStatus",
+            data:{id:id,zt:zt},
+            success:function (data){
+                $("#bootTab").bootstrapTable("refresh");
+            }
+        });
+    }
+
 
 
 

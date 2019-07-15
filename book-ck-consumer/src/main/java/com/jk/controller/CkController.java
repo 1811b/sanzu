@@ -1,6 +1,7 @@
 package com.jk.controller;
 
 import com.jk.model.LunBo;
+import com.jk.model.TreeBean;
 import com.jk.model.User;
 import com.jk.service.CkServiceFeign;
 import com.jk.util.OSSClientUtil;
@@ -10,6 +11,8 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 @RestController
 public class CkController {
@@ -37,16 +40,35 @@ public class CkController {
      * OSS阿里云上传图片
      */
     @PostMapping("updaloadImg")
-    public String uploadImg(MultipartFile imgg) throws IOException {
+    @ResponseBody
+    public HashMap<String, Object> uploadImg(MultipartFile imgg) throws IOException {
+
         if (imgg == null || imgg.getSize() <= 0) {
+
+
+
             throw new IOException("file不能为空");
+
         }
-        OSSClientUtil ossClient=new OSSClientUtil();
+
+        OSSClientUtil ossClient = new OSSClientUtil();
+
         String name = ossClient.uploadImg2Oss(imgg);
+
         String imgUrl = ossClient.getImgUrl(name);
-        String[] split = imgUrl.split("\\?");
-        //System.out.println(split[0]);
-        return split[0];
+
+        //  String[] split = imgUrl.split("\\?");
+
+
+
+        HashMap<String, Object> map = new HashMap<>();
+
+        map.put("imngName", imgUrl);
+
+
+
+        return  map;
+
     }
 
     @PostMapping("addLunBoTu")
@@ -62,4 +84,27 @@ public class CkController {
         return feign.selectLunBo(start,pageSize);
 
     }
+
+    @PutMapping("updateLunBo")
+    public void  updateLunBo(LunBo lunBo){
+        feign.updateLunBo(lunBo);
+    }
+
+    @DeleteMapping("deleteLun")
+    public void  deleteLun(@RequestParam(value = "id")Integer id){
+        feign.deleteLun(id);
+    }
+
+    @PutMapping("updateStatus")
+    public void  updateStatus(@RequestParam(value = "id")Integer id,
+                              @RequestParam(value = "zt")Integer zt){
+        feign.updateStatus(id,zt);
+    }
+
+    //查询树
+    @GetMapping("selectTree")
+    public List<TreeBean>  selectTree(){
+       return feign.selectTree();
+    }
+
 }

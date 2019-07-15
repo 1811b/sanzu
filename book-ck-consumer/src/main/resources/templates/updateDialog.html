@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <form id="mongoForm">
-
-    <input type="hidden"  name="userId"  th:value="${user.userId}">
+    <input  type="hidden"  name="imgId"  th:value="${lun.imgId}">
+    <!--<input  type="hidden"  th:value="${lun.imgUrl}"  id="aaa">-->
     <div>
-        姓名: <input type="text" name="userName"  th:value="${user.userName}"  placeholder="姓名">
-    </div>
-    年龄: <input type="number" name="age"  th:value="${user.age}"  placeholder="年龄">
-    <div>
-        性别: <input type="radio" name="sex"  value="1"  th:checked="${user.sex==1}">男
-             <input type="radio" name="sex"  value="2"  th:checked="${user.sex==2}">女
+        图片名称: <input type="text" name="imgName" th:value="${lun.imgName}"   placeholder="图片名称">
     </div>
 
     <div>
-        出生日期:<input class='Wdate' name="birthday" type="text" style="width:160px"
-                    onclick="WdatePicker({dateFmt:'yyyy-MM-dd'})"
-                    th:value="${#dates.format(user.birthday,'yyyy-MM-dd')}" />
+        点击链接地址: <input type="text" name="clickUrl"  th:value="${lun.clickUrl}"  placeholder="点击链接地址">
+    </div>
+
+    <div>
+        是否展示: <input type="radio" name="imgStatus" th:checked="${lun.imgStatus==1}" value="1">展示
+        <input type="radio" name="imgStatus" th:checked="${lun.imgStatus==2}" value="2">不展示
+    </div>
+
+    <div class="form-group">
+        <label for="headImg">轮播图</label>
+        <input type="hidden" id="testimg" name="imgUrl"   th:value="${lun.imgUrl}"/>
+        <input type="file"   class="projectfile"  name="imgg" id="headImg">
+        <img id="iii"  width="80px"  height="60px">
     </div>
 
 
@@ -23,7 +28,44 @@
 
 
 <script  type="text/javascript">
+     $(function () {
+        uploadImg();
+         var s = $("#testimg").val();
+            $("#iii").attr('src', s);
+    });
+    function uploadImg(url){
+        $('#headImg').fileinput({
+            language: 'zh', //设置语言
+            uploadUrl: 'updaloadImg', //上传的地址
+            allowedFileExtensions: ['jpg', 'gif', 'png'],//接收的文件后缀
+            showUpload: true, //是否显示上传按钮
+            showCaption: false,//是否显示标题
+            browseClass: "btn btn-primary", //按钮样式
+            dropZoneEnabled: false,//是否显示拖拽区域
+            //minImageWidth: 50, //图片的最小宽度
+            //minImageHeight: 50,//图片的最小高度
+            //maxImageWidth: 1000,//图片的最大宽度
+            //maxImageHeight: 1000,//图片的最大高度
+            //maxFileSize: 0,//单位为kb，如果为0表示不限制文件大小
+            //minFileCount: 0,
+            maxFileCount: 2, //表示允许同时上传的最大文件个数
+            enctype: 'multipart/form-data',
+            validateInitialCount:true,
+            previewFileIcon: "<i class='glyphicon glyphicon-king'></i>",
+            msgFilesTooMany: "选择上传的文件数量({n}) 超过允许的最大数值{m}！",
 
+        }).on('fileuploaded', function(event, data, previewId, index) {
+
+            var imgval = $('#testimg').val();
+
+            if(imgval == null || imgval == "" || imgval == undefined){
+                imgval = data.response.imngName;
+            }/*else{
+			imgval += ","+"http://<%= request.getServerName()%>:<%=request.getServerPort()%><%=request.getContextPath()%>/"+data.response;
+		}*/
+            $('#testimg').val(imgval);
+        });
+    }
 </script>
 
 

@@ -22,4 +22,25 @@
     <select id="selectLunBoCount"  resultType="java.lang.Integer">
         SELECT COUNT(*) FROM t_lunbotu
     </select>
+
+    <select id="selectLunById"  parameterType="java.lang.Integer"  resultType="com.jk.model.LunBo">
+        SELECT * FROM t_lunbotu WHERE imgId = #{id}
+    </select>
+
+    <update id="updateLunBo"  parameterType="com.jk.model.LunBo"  >
+        UPDATE t_lunbotu  SET  imgName=#{imgName},imgUrl=#{imgUrl},clickUrl=#{clickUrl},
+        imgStatus=#{imgStatus} WHERE imgId = #{imgId}
+    </update>
+
+    <delete id="deleteLun" parameterType="java.lang.Integer">
+        DELETE FROM t_lunbotu  WHERE imgId = #{id}
+    </delete>
+
+    <update id="updateStatus"  parameterType="java.lang.Integer">
+         UPDATE t_lunbotu  SET  imgStatus=#{zt} WHERE imgId = #{id}
+    </update>
+
+    <select id="selectTree"  resultType="com.jk.model.TreeBean">
+        SELECT * FROM t_tree
+    </select>
 </mapper>

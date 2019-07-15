@@ -11,7 +11,7 @@ spring:
       server:
         git:
           uri: https://github.com/1811b/sprc-config.git
-          search-paths: /
+          search-paths: /config-ck/
 
         label: master
 

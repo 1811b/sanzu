@@ -2,6 +2,7 @@ package com.jk.controller;
 
 import com.jk.mapper.CkMapper;
 import com.jk.model.LunBo;
+import com.jk.model.TreeBean;
 import com.jk.model.User;
 import com.jk.service.CkService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -51,5 +52,36 @@ public class CkController implements CkService {
         List<LunBo>  list = ckMapper.selectLunBo(start,pageSize);
         map.put("rows",list);
         return map;
+    }
+
+    @Override
+    @PutMapping("updateLunBo")
+    public void updateLunBo(@RequestBody LunBo lunBo) {
+        ckMapper.updateLunBo(lunBo);
+    }
+
+    @Override
+    @RequestMapping("selectLunById/{id}")
+    public LunBo selectLunById(@PathVariable(value = "id") Integer id) {
+        return ckMapper.selectLunById(id);
+    }
+
+    @Override
+    @DeleteMapping("deleteLun/{id}")
+    public void deleteLun(@PathVariable(value = "id") Integer id) {
+        ckMapper.deleteLun(id);
+    }
+
+    @Override
+    @PutMapping("updateStatus/{id}/{zt}")
+    public void updateStatus(@PathVariable(value = "id") Integer id,
+                             @PathVariable(value = "zt") Integer zt) {
+        ckMapper.updateStatus(id,zt);
+    }
+
+    @Override
+    @GetMapping("selectTree")
+    public List<TreeBean> selectTree() {
+        return ckMapper.selectTree();
     }
 }

@@ -18,7 +18,7 @@
 
     <div class="form-group">
         <label for="headImg">轮播图</label>
-        <input type="text" id="testimg" name="imgUrl"/>
+        <input type="hidden" id="testimg" name="imgUrl"/>
         <input type="file"   class="projectfile"  name="imgg" id="headImg">
     </div>
 </form>
@@ -31,7 +31,7 @@
     function uploadImg(url){
         $('#headImg').fileinput({
             language: 'zh', //设置语言
-            uploadUrl: '/updaloadImg', //上传的地址
+            uploadUrl: 'updaloadImg', //上传的地址
             allowedFileExtensions: ['jpg', 'gif', 'png'],//接收的文件后缀
             showUpload: true, //是否显示上传按钮
             showCaption: false,//是否显示标题
@@ -54,7 +54,7 @@
             var imgval = $('#testimg').val();
 
             if(imgval == null || imgval == "" || imgval == undefined){
-                imgval = data.response.responseText;
+                imgval = data.response.imngName;
             }/*else{
 			imgval += ","+"http://<%= request.getServerName()%>:<%=request.getServerPort()%><%=request.getContextPath()%>/"+data.response;
 		}*/
