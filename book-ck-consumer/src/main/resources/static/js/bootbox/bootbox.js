@@ -569,7 +569,7 @@
     });
 
     if (shouldShow === true) {
-      dialog.modal("show");
+      dialog.modal("templates.lunBo.show");
     }
 
     return dialog;
@@ -756,7 +756,7 @@
     });
 
     if (options.show) {
-      dialog.modal("show");
+      dialog.modal("templates.lunBo.show");
     }
 
     // @TODO should we return the raw element here or should

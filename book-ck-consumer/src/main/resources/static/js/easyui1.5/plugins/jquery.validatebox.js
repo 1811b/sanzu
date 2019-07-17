@@ -80,7 +80,7 @@ _12.err(_10,_11.message,"hide");
 function _13(e){
 var _14=e.data.target;
 var _15=$.data(_14,"validatebox");
-_15.options.err(_14,_15.message,"show");
+_15.options.err(_14,_15.message,"templates.lunBo.show");
 };
 function _16(e){
 var _17=e.data.target;
@@ -96,8 +96,8 @@ var t=$(_1a);
 if(_1c=="hide"||!_1b){
 t.tooltip("hide");
 }else{
-if((t.is(":focus")&&_1d.validating)||_1c=="show"){
-t.tooltip($.extend({},_1e.tipOptions,{content:_1b,position:_1e.tipPosition,deltaX:_1e.deltaX,deltaY:_1e.deltaY})).tooltip("show");
+if((t.is(":focus")&&_1d.validating)||_1c=="templates.lunBo.show"){
+t.tooltip($.extend({},_1e.tipOptions,{content:_1b,position:_1e.tipPosition,deltaX:_1e.deltaX,deltaY:_1e.deltaY})).tooltip("templates.lunBo.show");
 }
 }
 };

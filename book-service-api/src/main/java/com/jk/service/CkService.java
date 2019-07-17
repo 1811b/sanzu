@@ -34,8 +34,8 @@ public interface CkService {
     void updateStatus(@PathVariable(value = "id") Integer id,
                       @PathVariable(value = "zt") Integer zt);
 
-    @GetMapping("selectTree")
-    List<TreeBean> selectTree();
+    @GetMapping("selectTree/{pid}")
+    List<TreeBean> selectTree(@PathVariable(value = "pid") Integer pid);
 
     @GetMapping("selectLunZhan")
     List<LunBo> selectLunZhan();

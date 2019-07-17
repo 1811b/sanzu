@@ -5,6 +5,14 @@ spring:
   application:
     name: consumer-ck
 
+  data:
+    elasticsearch:
+      cluster-name: elasticsearch
+      cluster-nodes: localhost:9300
+  redis:
+    port: 6379
+    host: 192.168.1.188
+
 eureka:
   client:
     service-url:

@@ -62,8 +62,8 @@ public class CkServiceError implements CkService{
     }
 
     @Override
-    @GetMapping("selectTree")
-    public List<TreeBean> selectTree() {
+    @GetMapping("selectTree/{pid}")
+    public List<TreeBean> selectTree(@PathVariable(value = "pid") Integer pid) {
         return null;
     }
 

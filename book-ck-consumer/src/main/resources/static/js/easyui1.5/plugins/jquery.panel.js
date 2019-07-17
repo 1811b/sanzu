@@ -259,7 +259,7 @@ break;
 case "fade":
 _39.fadeIn(_38.openDuration,cb);
 break;
-case "show":
+case "templates.lunBo.show":
 _39.show(_38.openDuration,cb);
 break;
 default:

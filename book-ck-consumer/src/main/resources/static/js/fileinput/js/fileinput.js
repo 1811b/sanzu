@@ -48,7 +48,7 @@
         '<span class="{previewFileIconClass}">{previewFileIcon}</span>\n' +
         '</div>',
         MODAL_ID: 'kvFileinputModal',
-        MODAL_EVENTS: ['show', 'shown', 'hide', 'hidden', 'loaded'],
+        MODAL_EVENTS: ['templates.lunBo.show', 'shown', 'hide', 'hidden', 'loaded'],
         objUrl: window.URL || window.webkitURL,
         compare: function (input, str, exact) {
             return input !== undefined && (exact ? input === str : input.match(str));
@@ -1428,7 +1428,7 @@
             $modal.html(self._getModalContent());
             $frame = $btn.closest($h.FRAMES);
             self._setZoomContent($frame);
-            $modal.modal('show');
+            $modal.modal('templates.lunBo.show');
             self._initZoomButtons();
         },
         _zoomSlideShow: function (dir, previewId) {
@@ -3412,7 +3412,7 @@
             $h.initModal($modal);
             $modal.html(self._getModalContent());
             self._setZoomContent($frame);
-            $modal.modal('show');
+            $modal.modal('templates.lunBo.show');
             self._initZoomButtons();
         },
         getPreview: function () {

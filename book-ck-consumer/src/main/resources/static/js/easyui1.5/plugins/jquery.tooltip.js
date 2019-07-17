@@ -14,7 +14,7 @@ $(_2).addClass("tooltip-f");
 function _3(_4){
 var _5=$.data(_4,"tooltip").options;
 $(_4).unbind(".tooltip").bind(_5.showEvent+".tooltip",function(e){
-$(_4).tooltip("show",e);
+$(_4).tooltip("templates.lunBo.show",e);
 }).bind(_5.hideEvent+".tooltip",function(e){
 $(_4).tooltip("hide",e);
 }).bind("mousemove.tooltip",function(e){

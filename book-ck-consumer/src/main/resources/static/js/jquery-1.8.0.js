@@ -8642,7 +8642,7 @@ function defaultPrefilter( elem, props, opts ) {
 		value = props[ index ];
 		if ( rfxtypes.exec( value ) ) {
 			delete props[ index ];
-			if ( value === ( hidden ? "hide" : "show" ) ) {
+			if ( value === ( hidden ? "hide" : "templates.lunBo.show" ) ) {
 				continue;
 			}
 			handled.push( index );
@@ -8770,7 +8770,7 @@ Tween.propHooks.scrollTop = Tween.propHooks.scrollLeft = {
 	}
 };
 
-jQuery.each([ "toggle", "show", "hide" ], function( i, name ) {
+jQuery.each([ "toggle", "templates.lunBo.show", "hide" ], function(i, name ) {
 	var cssFn = jQuery.fn[ name ];
 	jQuery.fn[ name ] = function( speed, easing, callback ) {
 		return speed == null || typeof speed === "boolean" ||
@@ -8881,10 +8881,10 @@ function genFx( type, includeWidth ) {
 
 // Generate shortcuts for custom animations
 jQuery.each({
-	slideDown: genFx("show"),
+	slideDown: genFx("templates.lunBo.show"),
 	slideUp: genFx("hide"),
 	slideToggle: genFx("toggle"),
-	fadeIn: { opacity: "show" },
+	fadeIn: { opacity: "templates.lunBo.show" },
 	fadeOut: { opacity: "hide" },
 	fadeToggle: { opacity: "toggle" }
 }, function( name, props ) {

@@ -80,9 +80,9 @@ public class CkController implements CkService {
     }
 
     @Override
-    @GetMapping("selectTree")
-    public List<TreeBean> selectTree() {
-        return ckMapper.selectTree();
+    @GetMapping("selectTree/{pid}")
+    public List<TreeBean> selectTree(@PathVariable(value = "pid")Integer pid) {
+        return ckMapper.selectTree(pid);
     }
 
     @Override

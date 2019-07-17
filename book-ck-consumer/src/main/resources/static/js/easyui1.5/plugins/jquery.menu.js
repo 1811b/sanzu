@@ -187,7 +187,7 @@ return;
 }
 var _2f=_2e[0].submenu;
 if(_2f){
-$(_2d).menu("show",{menu:_2f,parent:_2e});
+$(_2d).menu("templates.lunBo.show",{menu:_2f,parent:_2e});
 }
 }
 };

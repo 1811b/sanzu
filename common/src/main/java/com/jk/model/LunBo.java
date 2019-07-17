@@ -1,11 +1,18 @@
 package com.jk.model;
 
 import lombok.Data;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.elasticsearch.annotations.Document;
+import org.springframework.data.elasticsearch.annotations.Field;
+import org.springframework.data.elasticsearch.annotations.FieldType;
 
 import java.io.Serializable;
 
+
 @Data
+@Document(indexName = "sanzu",type = "t_lunbotu")
 public class LunBo implements Serializable {
+    @Id
     private Integer    imgId;//  --主键
     private String      imgName;//  --名称
     private String     imgUrl;//  --图片地址

@@ -27,7 +27,7 @@ public interface CkMapper {
 
     void updateStatus(Integer id, Integer zt);
 
-    List<TreeBean> selectTree();
+    List<TreeBean> selectTree(Integer pid);
 
     List<LunBo> selectLunZhan();
 }

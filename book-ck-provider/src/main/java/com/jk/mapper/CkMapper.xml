@@ -41,7 +41,7 @@
     </update>
 
     <select id="selectTree"  resultType="com.jk.model.TreeBean">
-        SELECT * FROM t_tree
+        SELECT * FROM t_tree WHERE pid = #{pid}
     </select>
 
     <select id="selectLunZhan"  resultType="com.jk.model.LunBo">

@@ -1505,7 +1505,7 @@
                 }
 
                 // when data is empty, hide the pagination
-                this.$pagination[this.getData().length ? 'show' : 'hide']();
+                this.$pagination[this.getData().length ? 'templates.lunBo.show' : 'hide']();
             }
 
             if (!this.options.paginationLoop) {

@@ -81,7 +81,7 @@ var btn=$(_15);
 var mm=$(_16.menu);
 if(mm.length){
 mm.menu("options").alignTo=btn;
-mm.menu("show",{alignTo:btn,align:_16.menuAlign});
+mm.menu("templates.lunBo.show",{alignTo:btn,align:_16.menuAlign});
 }
 btn.blur();
 };
