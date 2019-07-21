@@ -1,9 +1,7 @@
 package com.jk.controller;
 
 import com.jk.mapper.CkMapper;
-import com.jk.model.LunBo;
-import com.jk.model.TreeBean;
-import com.jk.model.User;
+import com.jk.model.*;
 import com.jk.service.CkService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -80,7 +78,7 @@ public class CkController implements CkService {
     }
 
     @Override
-    @GetMapping("selectTree/{pid}")
+    @RequestMapping("selectTree/{pid}")
     public List<TreeBean> selectTree(@PathVariable(value = "pid")Integer pid) {
         return ckMapper.selectTree(pid);
     }
@@ -89,5 +87,17 @@ public class CkController implements CkService {
     @GetMapping("selectLunZhan")
     public List<LunBo> selectLunZhan() {
         return ckMapper.selectLunZhan();
+    }
+
+    @Override
+    @GetMapping("selectBookZheng")
+    public List<Book> selectBookZheng() {
+        return ckMapper.selectBookZheng();
+    }
+
+    @RequestMapping("login")
+    @Override
+    public UserBean login(@RequestBody UserBean userBean) {
+        return ckMapper.login(userBean);
     }
 }

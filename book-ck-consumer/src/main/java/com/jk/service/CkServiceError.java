@@ -1,8 +1,6 @@
 package com.jk.service;
 
-import com.jk.model.LunBo;
-import com.jk.model.TreeBean;
-import com.jk.model.User;
+import com.jk.model.*;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.*;
 
@@ -62,7 +60,7 @@ public class CkServiceError implements CkService{
     }
 
     @Override
-    @GetMapping("selectTree/{pid}")
+    @RequestMapping("selectTree/{pid}")
     public List<TreeBean> selectTree(@PathVariable(value = "pid") Integer pid) {
         return null;
     }
@@ -70,6 +68,18 @@ public class CkServiceError implements CkService{
     @Override
     @GetMapping("selectLunZhan")
     public List<LunBo> selectLunZhan() {
+        return null;
+    }
+
+    @Override
+    @GetMapping("selectBookZheng")
+    public List<Book> selectBookZheng() {
+        return null;
+    }
+
+    @RequestMapping("login")
+    @Override
+    public UserBean login(@RequestBody UserBean userBean) {
         return null;
     }
 }

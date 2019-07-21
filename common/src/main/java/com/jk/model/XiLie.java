@@ -14,4 +14,5 @@ public class XiLie implements Serializable {
     private BigDecimal   zhePrice;//  --折后价格
     private Integer       zheId;//      --打折ID
     private Integer     proCount;//   --每个系列的库存（sku）
+    private Integer   genStatus;//  默认首页展示的系列  1是默认展示  2是非默认
 }

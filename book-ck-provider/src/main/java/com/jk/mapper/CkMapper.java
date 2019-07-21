@@ -1,8 +1,6 @@
 package com.jk.mapper;
 
-import com.jk.model.LunBo;
-import com.jk.model.TreeBean;
-import com.jk.model.User;
+import com.jk.model.*;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -30,4 +28,8 @@ public interface CkMapper {
     List<TreeBean> selectTree(Integer pid);
 
     List<LunBo> selectLunZhan();
+
+    List<Book> selectBookZheng();
+
+    UserBean login(UserBean userBean);
 }

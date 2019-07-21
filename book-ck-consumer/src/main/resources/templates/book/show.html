@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script type="text/javascript"  src="../js/jquery-1.8.0.js"></script>
+    <style>
+        .yuanjia{text-decoration:line-through}
+        .yuanjia{ float:left}
+        .zhehoujia{float: left}
+        .kongxi{float: left;width: 20px;height: 1px}
+        .book{float: left;width: 200px;height: 250px}
+    </style>
+</head>
+<body>
+
+${session.name}
+<div  id="book"></div>
+</body>
+<script  type="text/javascript">
+    $(function () {
+        var bookZheng="";
+        $.ajax({
+            url:"selectBookZheng",
+            type:"get",
+            success:function (data) {
+                var bookZheng = "";
+                for (var i = 0; i <data.length ; i++) {
+
+
+                    bookZheng+="<div  class='book'>"+"<img src='"+data[i].cover+"'  width='200px' height='200px'><br>"+"<div>"+data[i].proTitle+"</div>"+"<div class='zhehoujia'>"+"￥"+data[i].zhePrice+"</div>"+"<div class='kongxi'></div>"+"<div  class='yuanjia'>"+"￥"+data[i].orderPrice+"</div>"+"</div>"
+                }
+                $("#book").html(bookZheng);
+
+            }
+
+        })
+    })
+</script>
+</html>

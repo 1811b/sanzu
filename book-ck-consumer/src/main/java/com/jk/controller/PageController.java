@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import javax.servlet.http.HttpServletRequest;
+
 @Controller
 public class PageController {
     @Autowired
@@ -48,6 +50,43 @@ public class PageController {
     @CrossOrigin
     public String toBook1(){
         return "book/book-1";
+    }
+
+    @RequestMapping("toBook0")
+    @CrossOrigin
+    public String toBook0(){
+        return "book/book-0";
+    }
+
+
+    @RequestMapping("toLunShouYe")
+    @CrossOrigin
+    public String toLunShouYe(){
+        return "lunBo/shouye";
+    }
+
+    @CrossOrigin
+    @RequestMapping("loginDialog")
+    public  String  loginDialog(){
+
+        return "login/loginDialog";
+
+    }
+
+    @CrossOrigin
+    @RequestMapping("loginIndex")
+    public  String  loginIndex(){
+
+        return "login/index";
+
+    }
+
+    @RequestMapping("toBookShow")
+    @CrossOrigin
+    public String toBookShow(HttpServletRequest request){
+        request.getSession().setAttribute("name","陈凯");
+        System.out.println(request.getSession().getAttribute("name"));
+        return "book/show";
     }
 
     @RequestMapping("toShouYe")

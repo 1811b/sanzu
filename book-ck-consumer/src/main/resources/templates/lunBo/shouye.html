@@ -1,40 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <base href="<%=basePath%>">
-    <title>title</title>
-    <script type="text/javascript"  src="../js/jquery-1.8.0.js"></script>
-    <!-- 引入jquery -->
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/jquery-1.8.0.js"></script>
     <script src="../js/jquery.min.js"></script>
-    <!-- 引入bootstrap的css -->
     <link rel="stylesheet" href="../js/bootstrap/css/bootstrap.css">
-    <link  href="../js/bootstrap/css/bootstrap.min.css" rel="stylesheet" >
-    <link rel="stylesheet" href="../js/addTabs/addTabs.css">
+    <script src="../js/bootstrap/js/bootstrap.js"></script>
+    <script src="../js/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../js/fileinput/css/fileinput.css">
+    <link rel="stylesheet" href="../js/fileinput/css/fileinput.min.css">
+    <script src="../js/fileinput/js/fileinput.js"></script>
+    <script src="../js/fileinput/js/fileinput.min.js"></script>
+    <script src="../js/fileinput/js/locales/zh.js"></script>
+    <script src="../js/fileinput/js/locales/zh-TW.js"></script>
     <link rel="stylesheet" href="../js/table/bootstrap-table.css">
     <link rel="stylesheet" href="../js/table/bootstrap-table.min.css">
-    <!-- 引入fileinput的css -->
-    <link type="text/css" rel="stylesheet" href="../js/fileinput/css/fileinput.min.css" />
-    <!-- 引入bootstrap-table的js-->
-    <script type="text/javascript" src="../js/table/bootstrap-table.min.js"></script>
-    <script type="text/javascript" src="../js/table/locale/bootstrap-table-zh-CN.min.js"></script>
-    <!-- 引入bootbox.js -->
-    <script type="text/javascript" src="../js/bootbox/bootbox.js"></script>
-    <!-- 引入my97 -->
-    <script type="text/javascript" src="../js/my97/WdatePicker.js"></script>
-    <script src="../js/addTabs/addTabs.js"></script>
-
-    <!-- 引入fileinput的js -->
-    <script type="text/javascript" src="../js/fileinput/js/fileinput.min.js"></script>
-    <!--  引入fileinput的js -->
-    <script type="text/javascript" src="../js/fileinput/js/locales/zh.js"></script>
-    <script src="../js/bootstrap/js/bootstrap.min.js"></script>
-    <script src="../js/bootstrap/js/bootstrap.js"></script>
-
+    <script src="../js/table/bootstrap-table.js"></script>
+    <script src="../js/table/bootstrap-table.min.js"></script>
+    <script src="../js/my97/WdatePicker.js"></script>
 
 
 </head>
 <body>
+<!--  条件查询的 form  表单  -->
+<!-- 表单 -->
+<form id="pro_from" class="form-inline">
+    <div>
+        <input  type="text"  id="imgName"><br>
+    </div>
+    <button class="btn btn-primary btn-lg" type="button"  onclick="search()">搜索</button><br>
+    <!--<input  type="hidden"  id="pai"><br>
+    <button class="btn btn-primary btn-lg" type="button"  onclick="add(1)">正序</button>
+    <button class="btn btn-primary btn-lg" type="button"  onclick="add(2)">倒序</button>-->
 
+</form>
 <button class="btn btn-primary btn-lg" type="button"  onclick="add()">新增</button>
 <table id="bootTab"></table>
 
@@ -51,7 +51,7 @@
             clickToSelect:true,
             showToggle:true,                    //是否显示详细视图和列表视图的切换按钮
             cardView: false,                    //是否显示详细视图
-            uniqueId: "imgId",                 //每一行的唯一标识，一般为主键列
+            uniqueId: "imgid",                 //每一行的唯一标识，一般为主键列
             showColumns: true,                  //是否显示所有的列
             showRefresh: true,                  //是否显示刷新按钮
             minimumCountColumns: 2,     //  最少留两列
@@ -61,13 +61,13 @@
             toolbar:'#tabToolBar',   //  工具定义位置
             columns:[
                 //{checkbox:true},
-                {field:'imgId',title:"序号",width:100,
-                     formatter:function(value,row,index){   //  格式化  当前单元格内容
-							return "<input type='checkbox' value="+value+" name='chk'/>"+value+"";
-						}
+                {field:'imgid',title:"序号",width:100,
+                    formatter:function(value,row,index){   //  格式化  当前单元格内容
+                        return "<input type='checkbox' value="+value+" name='chk'/>"+value+"";
+                    }
                 },
-                {field:'imgName',title:'图片名称',width:100},      //  列    field   代表是 后台  传过来的值
-                {field:'imgStatus',title:'是否展示',width:100,
+                {field:'imgname',title:'图片名称',width:100},      //  列    field   代表是 后台  传过来的值
+                {field:'imgstatus',title:'是否展示',width:100,
                     formatter: function (value, row, index) {
                         if (value==1){
                             return "展示";
@@ -76,28 +76,28 @@
                         }
                     }
                 },
-                {field:'clickUrl',title:'点击链接地址',width:100,},
-                {field:'imgUrl',title:'图片',width:100,formatter:function(value,row,index){
+                {field:'clickurl',title:'点击链接地址',width:100,},
+                {field:'imgurl',title:'图片',width:100,formatter:function(value,row,index){
                         return"<img src='"+value+"' width='100px' height='50px'>";
                     }
                 },
                 {field:'caozuo',title:'操作',width:100,
                     formatter: function (value,row,index){
-                        if(row.imgStatus==1){
-                            return '<input type="button" value="编辑" onclick="updateDoctor('+row.imgId+')">    ' +
-                                '<input type="button" value="不展示" onclick="updateStatus('+row.imgId+',2)">    ' +
-                                '  <input type="button" value="删除" onclick="deleteDoctor('+row.imgId+')">';
-                        }else if (row.imgStatus==2) {
-                            return '<input type="button" value="编辑" onclick="updateDoctor('+row.imgId+')">    ' +
-                                '<input type="button" value="展示" onclick="updateStatus('+row.imgId+',1)">    ' +
-                                '  <input type="button" value="删除" onclick="deleteDoctor('+row.imgId+')">';
+                        if(row.imgstatus==1){
+                            return '<input type="button" value="编辑" onclick="updateDoctor('+row.imgid+')">    ' +
+                                '<input type="button" value="不展示" onclick="updateStatus('+row.imgid+',2)">    ' +
+                                '  <input type="button" value="删除" onclick="deleteDoctor('+row.imgid+')">';
+                        }else if (row.imgstatus==2) {
+                            return '<input type="button" value="编辑" onclick="updateDoctor('+row.imgid+')">    ' +
+                                '<input type="button" value="展示" onclick="updateStatus('+row.imgid+',1)">    ' +
+                                '  <input type="button" value="删除" onclick="deleteDoctor('+row.imgid+')">';
                         }
 
                     },
                 },
             ],
             //传递参数（*）
-           queryParams: function(params) {
+            queryParams: function(params) {
                 var whereParams = {
                     /*
                         分页  自定义的参数         默认传 limit（展示几条）    offset（从第几条开始    起始条数）
@@ -105,6 +105,7 @@
 
                     "start":params.offset,
                     "pageSize":params.limit,
+                    //"imgname":$("#imgName").val(),
 
 
 
@@ -133,7 +134,7 @@
 
     function  search(){
         $('#bootTab').bootstrapTable('refresh');
-    };
+    }
 
 
 
@@ -205,16 +206,16 @@
 
 
     add=function(){
-            dialog("toAddLunBoTu","addLunBoTu","新增轮播图");
+        dialog("toAddLunBoTu","addLunBoTu","新增轮播图");
     }
 
     updateDoctor=function(id){
-            /*var arr = $("#bootTab").bootstrapTable("getSelections");//获取复选框对象  butdeleteId
-            var mid=arr[0].mid;
-            alert(mid);*/
-            //alert(id);
-                dialog2("selectLunById?id="+id,"updateLunBo","修改轮播图");
-                //alert("请选择要修改的数据");
+        /*var arr = $("#bootTab").bootstrapTable("getSelections");//获取复选框对象  butdeleteId
+        var mid=arr[0].mid;
+        alert(mid);*/
+        //alert(id);
+        dialog2("selectLunById?id="+id,"updateLunBo","修改轮播图");
+        //alert("请选择要修改的数据");
     }
 
 
@@ -262,19 +263,19 @@
 
     deleteDoctor=function(id){
 
-       /* var arr = $("#bootTab").bootstrapTable("getSelections");//获取复选框对象  butdeleteId
+        /* var arr = $("#bootTab").bootstrapTable("getSelections");//获取复选框对象  butdeleteId
 
-        if (arr.length== 0) {
-            alert("请先选择要删除的记录!");
-            return;
-        }
-        var ids = '';
-        for (var i = 0; i<arr.length;i++) {
-            ids += arr[i].mid+ ",";
-        }
-        ids = ids.substring(0, ids.length - 1);
-        alert(ids);*/
-       //alert(id);
+         if (arr.length== 0) {
+             alert("请先选择要删除的记录!");
+             return;
+         }
+         var ids = '';
+         for (var i = 0; i<arr.length;i++) {
+             ids += arr[i].mid+ ",";
+         }
+         ids = ids.substring(0, ids.length - 1);
+         alert(ids);*/
+        //alert(id);
         $.ajax({
             type:"delete",
             url:"deleteLun",

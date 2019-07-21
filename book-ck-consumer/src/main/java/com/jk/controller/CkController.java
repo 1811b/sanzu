@@ -1,10 +1,10 @@
 package com.jk.controller;
 
-import com.jk.model.LunBo;
-import com.jk.model.TreeBean;
-import com.jk.model.User;
+import com.jk.model.*;
+import com.jk.repository.LunBoTuRepository;
 import com.jk.service.CkServiceFeign;
 import com.jk.util.OSSClientUtil;
+import org.apache.commons.lang.time.FastDateFormat;
 import org.elasticsearch.action.search.SearchRequestBuilder;
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.client.Client;
@@ -12,19 +12,20 @@ import org.elasticsearch.common.text.Text;
 import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.search.SearchHit;
 import org.elasticsearch.search.SearchHits;
-import org.elasticsearch.search.aggregations.metrics.percentiles.hdr.InternalHDRPercentileRanks;
 import org.elasticsearch.search.fetch.subphase.highlight.HighlightBuilder;
 import org.elasticsearch.search.fetch.subphase.highlight.HighlightField;
-import org.elasticsearch.search.sort.SortOrder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.elasticsearch.core.ElasticsearchTemplate;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+import sun.reflect.generics.tree.Tree;
 
 import java.io.IOException;
+import java.time.Instant;
 import java.util.*;
+import java.util.concurrent.atomic.AtomicInteger;
 
 @RestController
 
@@ -41,6 +42,9 @@ public class CkController {
 
     @Autowired
     private StringRedisTemplate stringRedisTemplate;
+
+    @Autowired
+    private LunBoTuRepository lunBoTuRepository;
 
     @RequestMapping("aaa")
     public User text(){
@@ -130,40 +134,33 @@ public class CkController {
 
     //查询树
     @CrossOrigin
-    @GetMapping("selectTree")
-    public List<TreeBean>  selectTree(){
-        Integer pid = -1;
-        List<TreeBean> list = getTreeBeans(pid);
+    @RequestMapping("selectTree")
+
+    public  List<TreeBean>  selectTree(){
+        Integer pid=-1;
+        List<TreeBean>	list = getTree(pid);
         return list;
 
     }
 
-    private List<TreeBean> getTreeBeans(Integer pid) {
-        List<TreeBean>  treeBeanList = feign.selectTree(pid);
-        for (TreeBean treeBean : treeBeanList) {
-            Integer treeBeanId = treeBean.getId();
-            List<TreeBean> beanList = getTreeBeans(treeBeanId);
-            treeBean.setNodes(beanList);
+
+    private List<TreeBean> getTree(Integer pid) {
+        List<TreeBean>	list = feign.selectTree(pid);
+        for (TreeBean tree : list) {
+            Integer id = tree.getTid();
+            List<TreeBean> list2 = getTree(id);
+            tree.setNodes(list2);
+
         }
-        
-        return  treeBeanList;
+        return list;
     }
 
     @CrossOrigin
     @GetMapping("selectLunZhan")
     public List<LunBo>  selectLunZhan(){
         List<LunBo> list = feign.selectLunZhan();
-        String lun = "lunbotu";
-        if (redisTemplate.hasKey(lun)){
-            redisTemplate.delete(lun);
-        }
-        redisTemplate.opsForList().rightPushAll(lun,list);
-        List<LunBo> lunBoList = (List<LunBo>) redisTemplate.opsForList().range(lun,0,-1);
-        for (int i = 0; i < lunBoList.size(); i++) {
-            System.out.println(lunBoList.get(i).toString());
 
-        }
-        return lunBoList;
+        return list;
     }
 
 
@@ -176,16 +173,16 @@ public class CkController {
         SearchRequestBuilder searchRequestBuilder = client.prepareSearch("sanzu").setTypes("t_lunbotu");
         if (lunBo.getImgName()!=null&&lunBo.getImgName()!=""){
             searchRequestBuilder.setQuery(QueryBuilders.matchQuery("imgName",lunBo.getImgName()));
-        }
+                }
 
-        if (lunBo.getImgName()!=null&&lunBo.getImgName()!=""){
-            HighlightBuilder highlightBuilder = new HighlightBuilder();
-            highlightBuilder.field("imgName").preTags("<font  color='red'>").postTags("</font>");
+                if (lunBo.getImgName()!=null&&lunBo.getImgName()!=""){
+                    HighlightBuilder highlightBuilder = new HighlightBuilder();
+                    highlightBuilder.field("imgName").preTags("<font  color='red'>").postTags("</font>");
 
             searchRequestBuilder.highlighter(highlightBuilder).setFrom(start).setSize(pageSize);;
         }
 
-        searchRequestBuilder.setFrom(start).setSize(pageSize);
+            searchRequestBuilder.setFrom(start).setSize(pageSize);
         SearchResponse searchResponse = searchRequestBuilder.get();
         SearchHits hits = searchResponse.getHits();
         int total = (int) hits.totalHits;
@@ -210,5 +207,44 @@ public class CkController {
         return  map;
 
     }
+
+
+    //商品编号生成
+    private static final FastDateFormat pattern = FastDateFormat.getInstance("yyyyMMddHHmmss");
+    private static final AtomicInteger atomicInteger = new AtomicInteger(1);
+    private static ThreadLocal<StringBuilder> threadLocal = new ThreadLocal<StringBuilder>();
+    @RequestMapping("bianHao")
+    public String bianHao(){
+        StringBuilder builder = new StringBuilder(pattern.format(Instant.now().toEpochMilli()));// 取系统当前时间作为订单号前半部分
+        builder.append(atomicInteger.getAndIncrement());// 自增顺序
+        threadLocal.set(builder);
+        System.out.println(threadLocal.get().toString());
+        return threadLocal.get().toString();
+    }
+
+
+
+    //商品展示
+    @GetMapping("selectBookZheng")
+    public List<Book>  selectBookZheng(){
+       List<Book>  list = feign.selectBookZheng();
+       return list;
+    }
+
+
+    //登录
+    @RequestMapping("login")
+    public  String  login(UserBean userBean){
+        UserBean  user2 = feign.login(userBean);
+        if (user2==null) {
+            return  "fail";
+        }
+        return "success";
+
+    }
+
+
+
+
 
 }

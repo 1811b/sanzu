@@ -1,8 +1,6 @@
 package com.jk.service;
 
-import com.jk.model.LunBo;
-import com.jk.model.TreeBean;
-import com.jk.model.User;
+import com.jk.model.*;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
@@ -39,4 +37,10 @@ public interface CkService {
 
     @GetMapping("selectLunZhan")
     List<LunBo> selectLunZhan();
+
+    @GetMapping("selectBookZheng")
+    List<Book> selectBookZheng();
+
+    @RequestMapping("login")
+    UserBean login(@RequestBody UserBean userBean);
 }

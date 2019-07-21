@@ -16,9 +16,80 @@
     <script type="text/javascript" src="//static.360buyimg.com/mtd/pc/cms/js/o2_ua.min.js"></script>
     <!-- Swiper JS -->
     <script src="../swiper/js/swiper.min.js"></script>
+    <style type="text/css">
+        .yys-floor-16112201 {
+            display: none;
+            position: relative;
+            z-index: 2; }
+        .yys-floor-16112201 a {
+            display: block;
+            position: absolute;
+            top: 0;
+            z-index: 10;
+            overflow: hidden; }
+        .yys-floor-16112201 img {
+            display: block;
+            background: none; }
 
+        .mod_container .book_features img {
+            background: none; }
+
+        .book_features .panel .detail span {
+            margin-bottom: 8px; }
+
+        .book_found .p-num {
+            display: none; }
+
+        #qiye-activity .ui-dialog-close {
+            position: absolute;
+            z-index: 99;
+            width: 32px;
+            height: 32px;
+            top: 20px;
+            right: 20px;
+            cursor: pointer; }
+
+        .book_fixedbottom {
+            display: none;
+            position: fixed;
+            bottom: 10px;
+            left: 50%;
+            z-index: 99;
+            margin-left: -616px;
+            width: 1232px;
+            height: 100px;
+            overflow: visible; }
+
+        .book_fixedbottom .mt {
+            position: absolute;
+            right: -28px;
+            top: 36px;
+            width: 28px;
+            height: 28px; }
+
+        .book_fixedbottom .mt .close {
+            display: none; }
+
+        .book_fixedbottom:hover .mt .close {
+            display: block; }
+
+        .book_fixedbottom .list {
+            height: 100px;
+            overflow: hidden; }
+
+        .book_fixedbottom .item {
+            float: left;
+            width: 154px;
+            height: 100px; }
+
+        .book_fixedbottom .item img {
+            display: block;
+            width: 154px;
+            height: 100px; }
+
+    </style>
     <!-- Demo styles -->
-    <style>
+   <!-- <style>
         html, body {
             position: relative;
             height: 100%;
@@ -56,15 +127,7 @@
             -webkit-align-items: center;
             align-items: center;
         }
-
-    </style>
-    <style>
-        .yuanjia{text-decoration:line-through}
-        .yuanjia{ float:left}
-        .zhehoujia{float: left}
-        .kongxi{float: left;width: 20px;height: 1px}
-        .book{float: left;width: 200px;height: 250px}
-    </style>
+    </style>-->
 
     <link type="text/css" rel="stylesheet" href="//misc.360buyimg.com/channel/??/lib/1.2.0/widget/qrcode/qrcode.css,lib/1.3.0/widget/follow/follow.css" source="widget" />
     <link type="text/css" rel="stylesheet" href="//misc.360buyimg.com/channel/lib/1.4.0/widget/product/product.css" source="widget" />
@@ -103,13 +166,35 @@
                 </div>
             </li>
             <li class="spacer"></li>
-
+            <!--<li class="fore5"   id="ttbar-ent">
+                <div class="dt">
+                    <a target="_blank" href="//b.jd.com/">企业采购</a>
+                </div>
+            </li>-->
             <li class="spacer"></li>
-
+            <!--<li class="fore6 dorpdown" id="ttbar-serv">
+                <div class="dt cw-icon">
+                    &lt;!&ndash; <i class="ci-right"><s>◇</s></i> &ndash;&gt;
+                    客户服务<i class="iconfont">&#xe605;</i>
+                </div>
+                <div class="dd dorpdown-layer"></div>
+            </li>-->
             <li class="spacer"></li>
-
+            <!--<li class="fore7 dorpdown" id="ttbar-navs">
+                <div class="dt cw-icon">
+                    &lt;!&ndash; <i class="ci-right"><s>◇</s></i> &ndash;&gt;
+                    网站导航<i class="iconfont">&#xe605;</i>
+                </div>
+                <div class="dd dorpdown-layer"></div>
+            </li>-->
             <li class="spacer"></li>
-
+            <!--<li class="fore8 dorpdown" id="ttbar-apps">
+                <div class="dt cw-icon">
+                    &lt;!&ndash; <i class="ci-left"></i> &ndash;&gt;
+                    &lt;!&ndash; <i class="ci-right"><s>◇</s></i> &ndash;&gt;
+                    <a target="_blank" href="//app.jd.com/">手机京东</a>
+                </div>
+            </li>-->
         </ul>
         <span class="clr"></span>
     </div>
@@ -120,15 +205,22 @@
     <div id="logo-2014">
         <a href="//www.jd.com/" class="logo">青春书屋</a>
         <div class="extra">
-           <div id="channel"></div>
-            <div id="categorys-mini">
+            <div id="channel"></div>
+            <!--<div id="categorys-mini">
                 <div class="cw-icon">
-
+                    <h2>
+                        <a href="//www.jd.com/allSort.aspx">
+                            全部分类
+                            <span class="ifont-right">
+                                <s class="iconfont">&#xe605;</s>
+                            </span>
+                        </a>
+                    </h2>
                 </div>
                 <div id="categorys-mini-main">
                     <span class="loading"></span>
                 </div>
-            </div>
+            </div>-->
         </div>
     </div>
     <div id="search-2014">
@@ -138,7 +230,9 @@
             <button onclick="search('key');return false;" class="button cw-icon"><i></i>搜索</button>
         </div>
     </div>
-
+    <!--<div id="advance-2014">
+        <a target="_blank" href="//search.jd.com/bookadv.html" clstag="channel|keycount|3334|FULLSEARCH">高级搜索</a>
+    </div>-->
     <div id="settleup-2014" class="dorpdown">
         <div class="cw-icon">
             <i class="iconfont">&#xe607;</i>
@@ -163,7 +257,10 @@
     <div id="nav-2014">
         <div class="w">
             <div class="w-spacer"></div>
-
+            <!--<div id="categorys-2014" class="dorpdown">
+                <div class="dt">图书分类
+                </div>
+            </div>-->
             <div id="navitems-2014">
                 <ul id="navitems-group">
                     <li clstag="channel|keycount|3334|1_2_1" class="fore1" id="nav-1">
@@ -192,10 +289,19 @@
                     </li>
                 </ul>
             </div>
-
+            <!--<div id="treasure"><div class="channel-follow" data-id="3334"><i></i><em>关注频道</em></div></div>
+            <span class="clr"></span>-->
         </div>
     </div><!--channle_floor_ok-->
-
+    <script>
+        (function(window){
+            window.data = window.data || {};
+            window.data['yys-background'] = {
+                'content':[{"NAME":"\u5de6-7\u67081\u65e5","URL":"https:\/\/pro.jd.com\/mall\/active\/2uahMtRCWLV7KePkzvDWDHFCJPpU\/index.html","PIC":"\/\/img11.360buyimg.com\/cms\/jfs\/t1\/40222\/23\/11144\/41446\/5d23ef67E620b39a2\/380cfc614396b3e8.png","NAME1":"195","NAME2":"360","PIC2":"\/\/img10.360buyimg.com\/cms\/","CUSTOM1":"2019\/7\/09 00:00:00","CUSTOM2":"2019\/7\/10 00:00:00","id":"123303"},{"NAME":"\u53f3-7\u67081\u65e5","URL":"https:\/\/pro.jd.com\/mall\/active\/2uahMtRCWLV7KePkzvDWDHFCJPpU\/index.html","PIC":"\/\/img14.360buyimg.com\/cms\/jfs\/t1\/49845\/1\/4509\/34947\/5d23ef8aE66c20714\/4054323da7c527e3.png","NAME1":"195","NAME2":"360","PIC2":"\/\/img10.360buyimg.com\/cms\/","CUSTOM1":"2019\/7\/09  00:00:00","CUSTOM2":"2019\/7\/10  00:00:00","id":"123304"}],
+                'now': 1562892487
+            }
+        })(window);
+    </script>
     <div class="w yys-floor-16112201"></div><!--channle_floor_ok-->
     <div class="mod_container">
         <div class="firstscreen_container">
@@ -205,19 +311,36 @@
           @date: home
           @description: 首屏焦点图
         -->
+            <script>
+                /**
+                 * cell_328：文字链
+                 * cell_337：小图文
+                 * cell_338：商品池
+                 * cell_862：素材池
+                 */
+                (function(window){
+                    window.data = window.data || {};
+                    window.data['book_slider_3'] = {
+                        slider: [],
+                        portal_floor_id:'3',
+                        portal_id:'3334',
+                        isWide: pageConfig.compatible && pageConfig.wideVersion
+                    };
+                })(window);
+            </script>
 
             <div class="o2data-lazyload book_slider" id="book_slider_3" data-id="book_slider_3" data-tpl="book_slider_tpl">
                 <!-- Swiper -->
-                <div class="swiper-container">
-                    <!--<div class="swiper-wrapper"  id="imgs"></div>-->
-                    <!-- Add Pagination -->
+                <!--<div class="swiper-container">
+                    <div class="swiper-wrapper"  id="imgs"></div>
+                    &lt;!&ndash; Add Pagination &ndash;&gt;
                     <div class="swiper-pagination"></div>
-                    <!-- Add Arrows -->
+                    &lt;!&ndash; Add Arrows &ndash;&gt;
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
-                </div>
+                </div>-->
             </div>
-            <script>
+            <!--<script>
                 var swiper = new Swiper('.swiper-container', {
                     slidesPerView: 1,
                     spaceBetween: 30,
@@ -247,14 +370,28 @@
 
                                 img+="<div class=\"swiper-slide\">"+"<img  src='"+data[i].imgUrl+"'>"+"</div>"
                             }
-                            $("#book_slider_3").html(img);
+                            $("#imgs").html(img);
 
                         }
 
                     })
                 }
-            </script>
-            <!--channle_floor_ok-->
+            </script>-->
+            <script>
+                (function(){
+                    var id = '#book_slider_3';
+
+                    $(id).bind('done', function () {
+                        var $this = $(this);
+                        seajs.use('home/widget/book_tab', function (BookTab) {
+                            new BookTab({$el: $this, hasButton: true, evt: 'mouseover', effect: 'flash', isAutoPlay: true});
+                            var $tabNav = $this.find('.tab-nav');
+                            $tabNav.css('margin-left', -$tabNav.outerWidth()/2+'px').show();
+                        });
+                    });
+
+                })();
+            </script><!--channle_floor_ok-->
             <div class="w book_nav_wrap">
                 <!--
             @author: jingxijun3
@@ -302,7 +439,7 @@
                 <div class="o2data-lazyload book_nav" id="book_nav_4" data-id="book_nav_4" data-tpl="book_nav_tpl">
 
                 </div>
-                <!--<script>
+                <script>
                     (function(){
                         var id = '#book_nav_4';
 
@@ -314,7 +451,7 @@
                         });
 
                     })();
-                </script>--><!--channle_floor_ok-->
+                </script><!--channle_floor_ok-->
                 <!--
             @author: jingxijun3
             @name: book_badge
@@ -412,7 +549,7 @@
                      * cell_338：商品池
                      * cell_862：素材池
                      */
-                   /* (function(window){
+                    (function(window){
                         window.data = window.data || {};
                         window.data['book_discount_7'] = {
                             title: [{"NAME":"\u6bcf\u65e5\u75af\u62a2","URL":"\/\/aotu.jd.com","YFLAG":"1"}],
@@ -422,27 +559,7 @@
                             portal_id:'3334',
                             isWide: pageConfig.compatible && pageConfig.wideVersion
                         };
-                    })(window);*/
-                   $(function () {
-                       $(function () {
-                           var bookZheng="";
-                           $.ajax({
-                               url:"selectBookZheng",
-                               type:"get",
-                               success:function (data) {
-                                   var bookZheng = "";
-                                   for (var i = 0; i <data.length ; i++) {
-
-
-                                       bookZheng+="<div  class='book'>"+"<img src='"+data[i].cover+"'  width='200px' height='200px'><br>"+"<div class='zhehoujia'>"+"￥"+data[i].zhePrice+"</div>"+"<div class='kongxi'></div>"+"<div  class='yuanjia'>"+"￥"+data[i].orderPrice+"</div>"+"</div>"
-                                   }
-                                   $("#book_discount_7").html(bookZheng);
-
-                               }
-
-                           })
-                       })
-                   })
+                    })(window);
                 </script>
                 <div class="o2data-lazyload book_discount" id="book_discount_7" data-id="book_discount_7" data-tpl="book_discount_tpl">
 
@@ -453,7 +570,7 @@
             @date: home
             @description: 新品上市
           -->
-                <!--<script>
+                <script>
                     /**
                      * cell_328：文字链
                      * cell_337：小图文
@@ -498,7 +615,7 @@
                         });
 
                     })();
-                </script>--><!--channle_floor_ok-->
+                </script><!--channle_floor_ok-->
                 <!--
             @author: jingxijun3
             @name: book_rank

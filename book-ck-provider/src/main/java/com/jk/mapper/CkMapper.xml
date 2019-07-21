@@ -47,4 +47,12 @@
     <select id="selectLunZhan"  resultType="com.jk.model.LunBo">
         SELECT * FROM t_lunbotu
     </select>
+
+    <select id="selectBookZheng"  resultType="com.jk.model.Book">
+        SELECT * FROM t_book b,t_xilie x WHERE x.productId=b.proNumber AND x.genStatus=1
+    </select>
+
+    <select id="login" resultType="com.jk.model.UserBean"  parameterType="com.jk.model.UserBean">
+        SELECT * FROM h_user WHERE account = #{account} and password=#{password}
+    </select>
 </mapper>

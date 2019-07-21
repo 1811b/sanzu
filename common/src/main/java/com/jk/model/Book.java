@@ -3,6 +3,7 @@ package com.jk.model;
 import lombok.Data;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 
 @Data
 public class Book implements Serializable {
@@ -24,4 +25,7 @@ public class Book implements Serializable {
     private String     typeName;//类型名称
     private Integer    manPrice;//  --满多少钱才可以使用
     private Integer     jianPrice;//   --减的价格
+    private String    genreName;//   --类型
+    private BigDecimal orderPrice;//  --商品价格
+    private BigDecimal   zhePrice;//  --折后价格
 }
