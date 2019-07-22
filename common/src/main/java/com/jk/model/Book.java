@@ -19,4 +19,9 @@ public class Book implements Serializable {
     private Integer    reStatus;//  --是否热卖1、是2、否
     private Integer    shangStatus;//  --是否上架1、是2、否
     private Integer    tuiStatus;//  --是否推荐1、是2、否
+
+    //临时字段
+    private String     typeName;//类型名称
+    private Integer    manPrice;//  --满多少钱才可以使用
+    private Integer     jianPrice;//   --减的价格
 }

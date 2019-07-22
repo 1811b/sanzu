@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+    <style type="text/css">
+        .myrow{
+            margin-bottom:10px
+        }
+    </style>
+</head>
+<body>
+<form id="bookFrom">
+    <div class="row myrow">
+        <div class="col-md-2">
+            <label for="proNumber">商品编号</label>
+        </div>
+        <div class="col-md-4">
+            <input type="text" class="form-control" id="proNumber" name="proNumber"/>
+        </div>
+        <div class="col-md-2">
+            <label for="proTitle">书籍标题</label>
+        </div>
+        <div class="col-md-4">
+            <input type="text" class="form-control" id="proTitle" name="proTitle"/>
+        </div>
+    </div>
+    <div class="row myrow">
+        <div class="col-md-2">
+            <label for="proContext">内容简介</label>
+        </div>
+        <div class="col-md-4">
+            <input type="text" class="form-control" id="proContext" name="proContext"/>
+        </div>
+        <div class="col-md-2">
+            <label for="shuPing">精彩书评</label>
+        </div>
+        <div class="col-md-4">
+            <input type="text" class="form-control" id="shuPing" name="shuPing"/>
+        </div>
+    </div>
+    <div class="row myrow">
+        <div class="col-md-2">
+            <label for="sumCount">库存总数量</label>
+        </div>
+        <div class="col-md-4">
+            <input type="text" class="form-control" id="sumCount" name="sumCount"/>
+        </div>
+        <div class="col-md-2">
+            <label for="cuStatus">是否正在促销</label>
+        </div>
+        <div class="col-md-4">
+            <select class="form-control" id="cuStatus" name="cuStatus">
+                <option value="0">请选择</option>
+                <option value="1">促销</option>
+                <option value="2">不促销</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="row myrow">
+        <div class="col-md-2">
+            <label for="reStatus">是否热卖中</label>
+        </div>
+        <div class="col-md-4">
+            <select class="form-control" id="reStatus" name="reStatus">
+                <option value="0">请选择</option>
+                <option value="1">热卖</option>
+                <option value="2">不热卖</option>
+            </select>
+        </div>
+        <div class="col-md-2">
+            <label for="shangStatus">是否上架</label>
+        </div>
+        <div class="col-md-4">
+            <select class="form-control" id="shangStatus" name="shangStatus">
+                <option value="0">请选择</option>
+                <option value="1">上架</option>
+                <option value="2">下架</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="row myrow">
+        <div class="col-md-2">
+            <label for="typeId">图书类型</label>
+        </div>
+        <div class="col-md-4">
+            <select class="form-control" id="typeId" name="typeId">
+                <option value="0">请选择</option>
+                <option value="1">历史</option>
+                <option value="2">玄幻</option>
+                <option value="3">科普</option>
+                <option value="4">都市</option>
+                <option value="5">穿越</option>
+            </select>
+        </div>
+        <div class="col-md-2">
+            <label for="tuiStatus">是否推荐</label>
+        </div>
+        <div class="col-md-4">
+            <select class="form-control" id="tuiStatus" name="tuiStatus">
+                <option value="0">请选择</option>
+                <option value="1">推荐</option>
+                <option value="2">不推荐</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="headImg">封面图</label>
+        <input type="hidden" id="testimg" name="cover"/>
+        <input type="file"   class="projectfile"  name="imgg" id="headImg">
+    </div>
+
+</form>
+</body>
+<script>
+    $(function () {
+        uploadImg();
+    })
+    function uploadImg(url){
+        $('#headImg').fileinput({
+            language: 'zh', //设置语言
+            uploadUrl: '/updaloadImg', //上传的地址
+            allowedFileExtensions: ['jpg', 'gif', 'png'],//接收的文件后缀
+            showUpload: true, //是否显示上传按钮
+            showCaption: false,//是否显示标题
+            browseClass: "btn btn-primary", //按钮样式
+            dropZoneEnabled: false,//是否显示拖拽区域
+            //minImageWidth: 50, //图片的最小宽度
+            //minImageHeight: 50,//图片的最小高度
+            //maxImageWidth: 1000,//图片的最大宽度
+            //maxImageHeight: 1000,//图片的最大高度
+            //maxFileSize: 0,//单位为kb，如果为0表示不限制文件大小
+            //minFileCount: 0,
+            maxFileCount: 2, //表示允许同时上传的最大文件个数
+            enctype: 'multipart/form-data',
+            validateInitialCount:true,
+            previewFileIcon: "<i class='glyphicon glyphicon-king'></i>",
+            msgFilesTooMany: "选择上传的文件数量({n}) 超过允许的最大数值{m}！",
+
+        }).on('fileuploaded', function(event, data, previewId, index) {
+
+            var imgval = $('#testimg').val();
+            if(imgval == null || imgval == "" || imgval == undefined){
+                imgval = data.response.imngName;
+            }/*else{
+			imgval += ","+"http://<%= request.getServerName()%>:<%=request.getServerPort()%><%=request.getContextPath()%>/"+data.response;
+		}*/
+
+            $('#testimg').val(imgval);
+        });
+    }
+</script>
+</html>

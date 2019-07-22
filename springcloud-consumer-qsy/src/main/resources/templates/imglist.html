@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:form="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8"/>
+    <title>新闻展示</title>
+    <link rel="stylesheet" href="../bootstrap/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css"/>
+    <link rel="stylesheet" href="../bootstrap/bootstrap3/css/bootstrap.css"/>
+    <link rel="stylesheet" href="../bootstrap/bootstrap-table/bootstrap-table.css"/>
+    <link rel="stylesheet" href="../bootstrap/bootstrap-fileinput/css/fileinput.css"/>
+    <script src="../bootstrap/easyui1.5/jquery.min.js"></script>
+    <script src="../bootstrap/bootstrap3/js/bootstrap.js"></script>
+    <script src="../bootstrap/bootstrap-table/bootstrap-table.js"></script>
+    <script src="../bootstrap/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
+    <script src="../bootstrap/bootbox/bootbox.all.min.js"></script>
+    <script src="../bootstrap/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
+    <script src="../bootstrap/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+    <script src="../bootstrap/bootstrap-fileinput/js/fileinput.js"></script>
+    <script src="../bootstrap/bootstrap-fileinput/js/locales/zh.js"></script>
+
+</head>
+<body>
+<button type="button" class="btn btn-primary" onclick="openAdd()">添加轮播图</button>
+<table id="imgTable"></table>
+
+</body>
+<script>
+    /*页面加载*/
+    $(function(){
+        initImgTable();
+    })
+
+    function initImgTable(){
+        $("#imgTable").bootstrapTable({
+            url:'/findList',
+            toolbar:'#toolbar',
+            pagination:true, //开启分页
+            pageList:[1, 5, 10, 15,50],//分页组件
+            pageNumber:1,
+            pageSize:5,//默认每页条数
+            sidePagination:'server',//分页方式：client客户端分页，server服务端分页
+            striped:true,//条纹表格
+            queryParams:function(){
+                return {
+                    page:this.pageNumber,
+                    rows:this.pageSize,
+                };
+            },
+            columns: [
+                {field:'imgId',title:"id",width:100,
+                    formatter:function(value,row,index){   //  格式化  当前单元格内容
+                        return "<input type='checkbox'  value=" + value + " name='chk'/>";
+                    }
+                },
+                {field: 'proNo', title: '商品名称'},
+                {field:'imgs',title:'封面图',width:100,formatter:function(value,row,index){
+                        return"<img src='"+value+"' width='100px' height='50px'>";
+                    }
+                },
+                {field:'abc',title:'操作',formatter:function(value,row,index){
+                       return '<a href="javascript:del('+row.imgId+');">删除轮播图</a>';
+                    }}
+            ]
+        });
+
+    }
+
+    //删除
+    function del(imgId){
+        bootbox.confirm({
+            size: "small",
+            message: "确定删除该张轮播图吗?",
+            callback: function(result){
+                if(result){
+                    $.ajax({
+                        url: "/delImg",
+                        type:'post',
+                        data:{
+                            imgId:imgId
+                        },
+                        dataType:'json',
+                        success:function(data){
+                            if(data){
+                                $('#imgTable').bootstrapTable('refresh');
+                            }else{
+                                bootbox.alert({
+                                    size: "small",
+                                    title: "提示",
+                                    message: "删除失败",
+                                });
+                            }
+                        }
+                    })
+                }
+            }
+        })
+    }
+
+
+       var res;
+        function createAddContent(url){
+            $.ajax({
+                url:url,
+                async:false,
+                success:function(data){
+                    res = data;
+                }
+            });
+            return res;
+        }
+
+        function openAdd() {
+            var url = "/page/toAddImg";
+            bootbox.dialog({
+                title: '添加新闻',
+                message: createAddContent(url),
+                closeButton: true,//是否显示关闭按钮
+                buttons: {
+                    "保存": {
+                        "label": "<i class='icon-ok'></i> 保存",
+                        "className": "btn-sm btn-success",
+                        "callback": function () {
+                            $.ajax({
+                                url: '/saveImg',
+                                type: 'post',
+                                data: $("#imgFrom").serialize(),
+                                success: function () {
+                                    $('#imgTable').bootstrapTable('refresh');
+
+                                }
+                            });
+                        }
+                    },
+                    "取消": {
+                        "label": "<i class='icon-info'></i> 取消",
+                        "className": "btn-sm btn-danger",
+                        "callback": function () {
+
+                        }
+                    }
+                }
+
+            })
+        }
+
+</script>
+</html>

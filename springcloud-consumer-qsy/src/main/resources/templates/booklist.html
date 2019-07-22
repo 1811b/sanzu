@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:form="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8"/>
+    <title>新闻展示</title>
+    <link rel="stylesheet" href="../bootstrap/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css"/>
+    <link rel="stylesheet" href="../bootstrap/bootstrap3/css/bootstrap.css"/>
+    <link rel="stylesheet" href="../bootstrap/bootstrap-table/bootstrap-table.css"/>
+    <link rel="stylesheet" href="../bootstrap/bootstrap-fileinput/css/fileinput.css"/>
+    <script src="../bootstrap/easyui1.5/jquery.min.js"></script>
+    <script src="../bootstrap/bootstrap3/js/bootstrap.js"></script>
+    <script src="../bootstrap/bootstrap-table/bootstrap-table.js"></script>
+    <script src="../bootstrap/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
+    <script src="../bootstrap/bootbox/bootbox.all.min.js"></script>
+    <script src="../bootstrap/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
+    <script src="../bootstrap/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+    <script src="../bootstrap/bootstrap-fileinput/js/fileinput.js"></script>
+    <script src="../bootstrap/bootstrap-fileinput/js/locales/zh.js"></script>
+
+</head>
+<body>
+<button type="button" class="btn btn-primary" onclick="openAdd()">添加图书</button>
+<table id="bookTable"></table>
+
+</body>
+<script>
+    /*页面加载*/
+    $(function(){
+        initBookTable();
+    })
+
+    function initBookTable(){
+        $("#bookTable").bootstrapTable({
+
+            url:'/findBookList',
+            toolbar:'#toolbar',
+            pagination:true, //开启分页
+            pageList:[1, 5, 10, 15,50],//分页组件
+            pageNumber:1,
+            pageSize:5,//默认每页条数
+            sidePagination:'server',//分页方式：client客户端分页，server服务端分页
+            striped:true,//条纹表格
+            queryParams:function(){
+                return {
+                    page:this.pageNumber,
+                    rows:this.pageSize,
+                };
+            },
+            columns: [
+                {field:'productId',title:"id",width:100,
+                    formatter:function(value,row,index){   //  格式化  当前单元格内容
+                        return "<input type='checkbox'  value=" + value + " name='chk'/>";
+                    }
+                },
+                {field: 'proNumber', title: '商品编号'},
+                {field: 'typeName', title: '图书类型'},
+                {field: 'proTitle', title: '书籍标题'},
+                {field: 'proContext', title: '内容简介'},
+                {field: 'shuPing', title: '精彩书评'},
+                {field: 'sumCount', title: '库存总数量'},
+                {field:'cover',title:'封面图',width:100,formatter:function(value,row,index){
+                        return"<img src='"+value+"' width='100px' height='50px'>";
+                    }
+                },
+                {field:'cuStatus',title:"是否促销",formatter:function(value,row,index){
+                        return value==1?"促销":value==2?"不促销":"";
+                    }},
+                {field:'reStatus',title:"是否热卖",formatter:function(value,row,index){
+                        return value==1?"热卖":value==2?"不热卖":"";
+                    }},
+                {field:'shangStatus',title:"上/下架",formatter:function(value,row,index){
+                        return value==1?"上架":value==2?"下架":"";
+                    }},
+                {field:'tuiStatus',title:"是否推荐",formatter:function(value,row,index){
+                        return value==1?"推荐":value==2?"不推荐":"";
+                    }},
+                {field:'abc',title:'操作',formatter:function(value,row,index){
+                        var caozuo = row.shangStatus == 1 ? "下架" : "上架";
+                        var cuxiao = row.cuStatus ==1?"不促销":"促销";
+                        var remai = row.reStatus ==1?"不热卖":"热卖";
+                        var tuijian = row.tuiStatus ==1?"不推荐":"推荐";
+                       return '<a href="javascript:xiaJia('+row.productId+','+row.shangStatus+');"> '+caozuo+'</a> |' +
+                           '   <a href="javascript:remai('+row.productId+','+row.reStatus+');"> '+remai+'</a>|' +
+                           '   <a href="javascript:tuijian('+row.productId+','+row.tuiStatus+');"> '+tuijian+'</a> ' +
+                           '   <a href="javascript:cuXiao('+row.productId+','+row.cuStatus+');"> '+cuxiao+'</a> |' +
+                           '   <a href="javascript:del('+row.productId+');">删除图书</a>';
+
+                    }}
+            ]
+        });
+
+    }
+
+    //删除
+    function del(productId){
+        bootbox.confirm({
+            size: "small",
+            message: "确定删除该图书吗?",
+            callback: function(result){
+                if(result){
+                    $.ajax({
+                        url: "/delBook",
+                        type:'post',
+                        data:{
+                            productId:productId
+                        },
+                        dataType:'json',
+                        success:function(data){
+                            if(data){
+                                $('#bookTable').bootstrapTable('refresh');
+                            }else{
+                                bootbox.alert({
+                                    size: "small",
+                                    title: "提示",
+                                    message: "删除失败",
+                                });
+                            }
+                        }
+                    })
+                }
+            }
+        })
+    }
+
+
+        var res;
+        function createAddContent(url){
+            $.ajax({
+                url:url,
+                async:false,
+                success:function(data){
+                    res = data;
+                }
+            });
+            return res;
+        }
+
+        function openAdd() {
+            var url = "/page/toAddBook";
+            bootbox.dialog({
+                title: '添加图书',
+                message: createAddContent(url),
+                closeButton: true,//是否显示关闭按钮
+                buttons: {
+                    "保存": {
+                        "label": "<i class='icon-ok'></i> 保存",
+                        "className": "btn-sm btn-success",
+                        "callback": function () {
+                            $.ajax({
+                                url: '/saveBook',
+                                type: 'post',
+                                data: $("#bookFrom").serialize(),
+                                success: function () {
+                                    $('#bookTable').bootstrapTable('refresh');
+
+                                }
+                            });
+                        }
+                    },
+                    "取消": {
+                        "label": "<i class='icon-info'></i> 取消",
+                        "className": "btn-sm btn-danger",
+                        "callback": function () {
+
+                        }
+                    }
+                }
+
+            })
+        }
+
+
+   //上下架
+    function xiaJia(productId,shangStatus){
+        bootbox.confirm({
+
+            size: "small",
+            message: "确定要进行此操作吗?",
+            callback: function(result){
+                if(result){
+                    $.ajax({
+                        url: "/xiaJia",
+                        type:'post',
+                        data:{
+                            productId:productId,
+                            shangStatus:shangStatus
+                        },
+                        dataType:'json',
+                        success:function(data){
+                            alert(data.message);
+                            $('#bookTable').bootstrapTable('refresh');
+
+                        },error:function (data) {
+
+                            $('#bookTable').bootstrapTable('refresh');
+                        }
+                    })
+                }
+            }
+        })
+    }
+
+    //促销
+    function cuXiao(productId,cuStatus){
+        bootbox.confirm({
+
+            size: "small",
+            message: "确定要进行此操作吗?",
+            callback: function(result){
+                if(result){
+                    $.ajax({
+                        url: "/cuXiao",
+                        type:'post',
+                        data:{
+                            productId:productId,
+                            cuStatus:cuStatus
+                        },
+                        dataType:'json',
+                        success:function(data){
+                            alert(data.message);
+                            $('#bookTable').bootstrapTable('refresh');
+
+                        },error:function (data) {
+
+                            $('#bookTable').bootstrapTable('refresh');
+                        }
+                    })
+                }
+            }
+        })
+    }
+
+
+    //热卖
+    function remai(productId,reStatus){
+        bootbox.confirm({
+
+            size: "small",
+            message: "确定要进行此操作吗?",
+            callback: function(result){
+                if(result){
+                    $.ajax({
+                        url: "/remai",
+                        type:'post',
+                        data:{
+                            productId:productId,
+                            reStatus:reStatus
+                        },
+                        dataType:'json',
+                        success:function(data){
+                            alert(data.message);
+                            $('#bookTable').bootstrapTable('refresh');
+
+                        },error:function (data) {
+
+                            $('#bookTable').bootstrapTable('refresh');
+                        }
+                    })
+                }
+            }
+        })
+    }
+
+    //推荐
+    function tuijian(productId,tuiStatus){
+        bootbox.confirm({
+
+            size: "small",
+            message: "确定要进行此操作吗?",
+            callback: function(result){
+                if(result){
+                    $.ajax({
+                        url: "/tuijian",
+                        type:'post',
+                        data:{
+                            productId:productId,
+                            tuiStatus:tuiStatus
+                        },
+                        dataType:'json',
+                        success:function(data){
+                            alert(data.message);
+                            $('#bookTable').bootstrapTable('refresh');
+
+                        },error:function (data) {
+
+                            $('#bookTable').bootstrapTable('refresh');
+                        }
+                    })
+                }
+            }
+        })
+    }
+</script>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:form="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8"/>
+    <title>新闻展示</title>
+    <link rel="stylesheet" href="../bootstrap/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css"/>
+    <link rel="stylesheet" href="../bootstrap/bootstrap3/css/bootstrap.css"/>
+    <link rel="stylesheet" href="../bootstrap/bootstrap-table/bootstrap-table.css"/>
+    <link rel="stylesheet" href="../bootstrap/bootstrap-fileinput/css/fileinput.css"/>
+    <script src="../bootstrap/easyui1.5/jquery.min.js"></script>
+    <script src="../bootstrap/bootstrap3/js/bootstrap.js"></script>
+    <script src="../bootstrap/bootstrap-table/bootstrap-table.js"></script>
+    <script src="../bootstrap/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
+    <script src="../bootstrap/bootbox/bootbox.all.min.js"></script>
+    <script src="../bootstrap/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
+    <script src="../bootstrap/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+    <script src="../bootstrap/bootstrap-fileinput/js/fileinput.js"></script>
+    <script src="../bootstrap/bootstrap-fileinput/js/locales/zh.js"></script>
+
+</head>
+<body>
+<button type="button" class="btn btn-primary" onclick="openAdd()">添加图书</button>
+<table id="queryTable"></table>
+
+</body>
+<script>
+    /*页面加载*/
+    $(function(){
+        initQueryTable();
+    })
+
+    function initQueryTable(){
+        $("#queryTable").bootstrapTable({
+            url:'/queryBookList',
+            toolbar:'#toolbar',
+            pagination:true, //开启分页
+            pageList:[1, 5, 10, 15,50],//分页组件
+            pageNumber:1,
+            pageSize:5,//默认每页条数
+            sidePagination:'server',//分页方式：client客户端分页，server服务端分页
+            striped:true,//条纹表格
+            queryParams:function(){
+                return {
+                    page:this.pageNumber,
+                    rows:this.pageSize,
+                };
+            },
+            columns: [
+                {field:'productId',title:"id",width:100,
+                    formatter:function(value,row,index){   //  格式化  当前单元格内容
+                        return "<input type='checkbox'  value=" + value + " name='chk'/>";
+                    }
+                },
+                {field: 'proNumber', title: '商品编号'},
+                {field: 'typeName', title: '电子书类型'},
+                {field: 'proTitle', title: '书籍标题'},
+                {field: 'proContext', title: '内容简介'},
+                {field: 'bookPrice', title: '商品价格原价'},
+                {field: 'shangTime', title: '上架时间'},
+                {field: 'createTime', title: '出版时间'},
+                {field:'cover',title:'封面图',width:100,formatter:function(value,row,index){
+                        return"<img src='"+value+"' width='100px' height='50px'>";
+                    }
+                },
+                {field:'shangStatus',title:"上/下架",formatter:function(value,row,index){
+                        return value==1?"上架":value==2?"下架":"";
+                    }},
+                {field:'abc',title:'操作',formatter:function(value,row,index){
+                        if(row.shangStatus == 1){
+                            return '<a href="javascript:xia('+row.productId+');">下架</a> | <a href="javascript:del('+row.productId+');">删除图书</a>';
+                        }else{
+                            return '<a href="javascript:shang('+row.productId+');">上架</a> | <a href="javascript:del('+row.productId+');">删除图书</a>';
+                        }
+                    }}
+            ]
+        });
+
+    }
+
+    //删除
+    function del(productId){
+        bootbox.confirm({
+            size: "small",
+            message: "确定删除该电子书吗?",
+            callback: function(result){
+                if(result){
+                    $.ajax({
+                        url: "/delQueryBook",
+                        type:'post',
+                        data:{
+                            productId:productId
+                        },
+                        dataType:'json',
+                        success:function(data){
+                            if(data){
+                                $('#queryTable').bootstrapTable('refresh');
+                            }else{
+                                bootbox.alert({
+                                    size: "small",
+                                    title: "提示",
+                                    message: "删除失败",
+                                });
+                            }
+                        }
+                    })
+                }
+            }
+        })
+    }
+
+
+        var res;
+        function createAddContent(url){
+            $.ajax({
+                url:url,
+                async:false,
+                success:function(data){
+                    res = data;
+                }
+            });
+            return res;
+        }
+
+        function openAdd() {
+            var url = "/page/toBook";
+            bootbox.dialog({
+                title: '添加新闻',
+                message: createAddContent(url),
+                closeButton: true,//是否显示关闭按钮
+                buttons: {
+                    "保存": {
+                        "label": "<i class='icon-ok'></i> 保存",
+                        "className": "btn-sm btn-success",
+                        "callback": function () {
+                            $.ajax({
+                                url: '/saveQuery',
+                                type: 'post',
+                                data: $("#bookFrom").serialize(),
+                                success: function () {
+                                    $('#queryTable').bootstrapTable('refresh');
+
+                                }
+                            });
+                        }
+                    },
+                    "取消": {
+                        "label": "<i class='icon-info'></i> 取消",
+                        "className": "btn-sm btn-danger",
+                        "callback": function () {
+
+                        }
+                    }
+                }
+
+            })
+        }
+
+
+   //领取
+    function xia(productId){
+        bootbox.confirm({
+
+            size: "small",
+            message: "确定下架该电子书吗?",
+            callback: function(result){
+                if(result){
+                    $.ajax({
+                        url: "/xia",
+                        type:'post',
+                        data:{
+                            productId:productId
+                        },
+                        dataType:'json',
+                        success:function(data){
+                            alert(data.message);
+                            $('#queryTable').bootstrapTable('refresh');
+
+                        },error:function (data) {
+                            // bootbox.alert({
+                            //     size: "small",
+                            //     title: "提示",
+                            //     message: "领取失败",
+                            //
+                            // });
+                            $('#queryTable').bootstrapTable('refresh');
+                        }
+                    })
+                }
+            }
+        })
+    }
+
+    //上架
+    function shang(productId){
+        bootbox.confirm({
+
+            size: "small",
+            message: "确定下架该电子书吗?",
+            callback: function(result){
+                if(result){
+                    $.ajax({
+                        url: "/shang",
+                        type:'post',
+                        data:{
+                            productId:productId
+                        },
+                        dataType:'json',
+                        success:function(data){
+                            alert(data.message);
+                            $('#queryTable').bootstrapTable('refresh');
+
+                        },error:function (data) {
+                            // bootbox.alert({
+                            //     size: "small",
+                            //     title: "提示",
+                            //     message: "领取失败",
+                            //
+                            // });
+                            $('#queryTable').bootstrapTable('refresh');
+                        }
+                    })
+                }
+            }
+        })
+    }
+
+</script>
+</html>
